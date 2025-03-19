@@ -1,0 +1,3 @@
+[submodule "src/styles/art-css"]
+	path = src/styles/art-css
+	url = https://github.com/ArthurViniciusL/art-css.git
