@@ -1,1 +1,38 @@
 @import url('art-css/art.css');
+
+* {
+  box-sizing: border-box;
+}
+
+.art\:log\:red {
+  border: solid red 0.5px;
+}
+
+
+.art\:w\:device {
+  width: 100dvw;
+}
+
+.art\:w\:full {
+  width: 100%;
+}
+
+.art\:h\:device {
+  height: 100dvh;
+}
+
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+html {
+  scrollbar-width: none;
+}
+
+main {
+  width: 100%;
+  max-width: 150rem;
+  height: 100%;
+}
