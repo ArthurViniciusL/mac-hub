@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { useState } from "react";
 
-import appLogo from "@/assets/images/app-logo/mac_hub.svg";
+import appLogo from "@/assets/icons/app-logo/mac_hub.svg";
 
 export default function Header() {
     const [title] = useState<string>("Mural");
@@ -16,14 +16,15 @@ export default function Header() {
                 art:row 
                 art:gap:base 
                 art:justify-content:space-between
-                "
+                art:p:base 
+            "
             >
                 <div className="
                     art:flex 
                     art:row 
                     art:gap:base 
                     art:justify-content:flex-start
-                    "
+                "
                 >
                     <Image className=""
                         src={appLogo}
