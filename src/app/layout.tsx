@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "@/styles/globals.css";
 import Header from "@/components/layout/Header";
 import Main from "@/components/layout/Main";
+import Footer from "@/components/layout/Footer";
 
 export const metadata: Metadata = {
     title: "MAC HUB",
@@ -28,15 +29,15 @@ export default function RootLayout({
                     art:h:device
                     art:flex 
                     art:gap:lg
-                    art:col 
-                    art:m:base 
+                    art:col                 
                     art:flex 
                     art:align-items:center 
                     art:flex:col
-                ">
+            "
+            >
                 <Header />
                 <Main>{children}</Main>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime repudiandae repellat voluptates culpa dolorem qui vel nostrum consectetur totam ullam? Eius repudiandae quaerat quidem architecto possimus magni, ratione officia? Ipsum.</p>
+                <Footer/>
             </body>
         </html>
     );
