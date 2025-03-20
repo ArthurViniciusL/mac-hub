@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useState } from "react";
 
 import appLogo from "@/assets/icons/app-logo/mac_hub.svg";
+import { IconOpenMenu } from "@/app.modules";
 
 export default function Header() {
     const [title] = useState<string>("Mural");
@@ -35,7 +36,7 @@ export default function Header() {
                 </div>
                 {
                     menu ?
-                        <button> +++ </button>
+                        <button className="art:p:sm art:font:blue-01 art:hover:bg:blue-01 art:hover:font:white-01"> <IconOpenMenu className="" /> </button>
                         :
                         <></>
                 }

@@ -6,5 +6,11 @@
  * its projects
  */
 
-export {} from // itens as newName
-'your-lib';
+export {
+    
+    PanelTopOpen as IconOpenMenu,
+    PanelTopClose as IconCloseMenu
+
+
+} from // itens as newName
+'lucide-react';
