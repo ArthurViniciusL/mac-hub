@@ -12,16 +12,18 @@ export default function Footer() {
             art:gap:base
             art:align-items:center
             art:justify-content:space-between
+
             art:bg:white-02
+            art:font:black-01
         "
         >
-            <a>
+            <a href="https://museumaccg.org.br/" target="_blank">
                 <Image src={logoMac}
                     alt="logomarca do mac"
-                    width={100}
+                    width={150}
                 />
             </a>
-            <p className="art:font:black-03 art:font:semibold">
+            <p className="art:font:regular art:font:lg">
                 &copy; {currentYear}
             </p>
         </footer>

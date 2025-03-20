@@ -1,10 +1,5 @@
 @import url('art-css/art.css');
 
-html,
-body {
-  scroll-behavior: smooth;
-}
-
 html {
   scrollbar-width: none;
 
@@ -23,8 +18,8 @@ html {
 
 header,main,footer {
   padding: var(--base);
-  padding-left: var(--xl);
-  padding-right: var(--xl);
+  padding-left: var(--_5xl);
+  padding-right: var(--_5xl);
 }
 
 main {
