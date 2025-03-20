@@ -23,19 +23,19 @@ export default function Header() {
                     art:flex 
                     art:row 
                     art:gap:base 
-                    art:justify-content:flex-start
+                    art:align-items:flex-start
                 "
                 >
                     <Image className=""
                         src={appLogo}
                         alt=""
-                        height={100}
+                        height={90}
                     />
                     <h1 className="art:font:2xl art:font:bold">{title}</h1>
                 </div>
                 {
                     menu ?
-                        <button className="art:p:sm art:font:blue-01 art:hover:bg:blue-01 art:hover:font:white-01"> <IconOpenMenu className="" /> </button>
+                        <button className="art:bg:none art:p:sm art:font:black-01 art:hover:bg:none art:hover:font:black-01"> <IconOpenMenu className="" /> </button>
                         :
                         <></>
                 }

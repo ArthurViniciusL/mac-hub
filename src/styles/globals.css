@@ -27,3 +27,41 @@ main {
   max-width: 150rem;
   min-height: 100%;
 }
+
+.art\:log\:red {
+  border: solid red 0.5px;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--black-01);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.art\:font\:capitalize {
+  text-transform: capitalize;
+}
+
+.art\:overflow\:hidden {
+  overflow: hidden;
+}
+
+.art\:overflow\:scroll {
+  overflow: scroll;
+}
+
+.art\:w\:fit {
+  width: fit-content;
+}
+
+.art\:h\:fit {
+  height: fit-content;
+}

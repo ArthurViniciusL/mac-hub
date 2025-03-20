@@ -6,11 +6,13 @@
  * its projects
  */
 
-export {
-    
+export {    
     PanelTopOpen as IconOpenMenu,
-    PanelTopClose as IconCloseMenu
-
+    PanelTopClose as IconCloseMenu,
+    ScrollText as IconhigHlightsOfTheDay,
+    CalendarRange as IconEventsCalendar,
+    ImageOff as IconImageNotFount,
+    FileStack as IconMainDocuments
 
 } from // itens as newName
 'lucide-react';

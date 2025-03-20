@@ -25,10 +25,8 @@ const eslintConfig = [
       'react/jsx-max-props-per-line': [1, { maximum: 1, when: 'always' }],
       
       '@typescript-eslint/explicit-module-boundary-types': 'off',
-      indent: ['error', 4],
+      /* indent: ['error', 4], */
       quotes: ['error', 'double'],
-      semi: ['error', 'always'],
-      'react/jsx-indent': ['error', 4],
       'react/jsx-indent-props': ['error', 4],
       'react/jsx-filename-extension': [1, { extensions: ['.tsx'] }],
       'react/prop-types': 'off',

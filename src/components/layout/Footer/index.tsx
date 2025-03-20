@@ -17,7 +17,10 @@ export default function Footer() {
             art:font:black-01
         "
         >
-            <a href="https://museumaccg.org.br/" target="_blank">
+            <a 
+                href="https://museumaccg.org.br/"
+                target="_blank"
+            >
                 <Image src={logoMac}
                     alt="logomarca do mac"
                     width={150}
