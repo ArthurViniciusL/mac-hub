@@ -17,7 +17,6 @@ export default function Header() {
                 art:row 
                 art:gap:base 
                 art:justify-content:space-between
-                art:p:base 
             "
             >
                 <div className="
@@ -30,7 +29,7 @@ export default function Header() {
                     <Image className=""
                         src={appLogo}
                         alt=""
-                        height={150}
+                        height={100}
                     />
                     <h1 className="art:font:2xl art:font:bold">{title}</h1>
                 </div>

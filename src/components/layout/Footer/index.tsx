@@ -13,7 +13,6 @@ export default function Footer() {
             art:align-items:center
             art:justify-content:space-between
             art:bg:white-02
-            art:p:base
         "
         >
             <a>
@@ -22,7 +21,7 @@ export default function Footer() {
                     width={100}
                 />
             </a>
-            <p>
+            <p className="art:font:black-03 art:font:semibold">
                 &copy; {currentYear}
             </p>
         </footer>

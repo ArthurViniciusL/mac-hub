@@ -1,27 +1,5 @@
 @import url('art-css/art.css');
 
-* {
-  box-sizing: border-box;
-}
-
-.art\:log\:red {
-  border: solid red 0.5px;
-}
-
-
-.art\:w\:device {
-  width: 100dvw;
-}
-
-.art\:w\:full {
-  width: 100%;
-}
-
-.art\:h\:device {
-  height: 100dvh;
-}
-
-
 html,
 body {
   scroll-behavior: smooth;
@@ -41,6 +19,12 @@ html {
   100% {
       opacity: 1; /* Volta a ficar invisível no final */
   }
+}
+
+header,main,footer {
+  padding: var(--base);
+  padding-left: var(--xl);
+  padding-right: var(--xl);
 }
 
 main {
