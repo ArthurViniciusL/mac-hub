@@ -4,7 +4,6 @@ interface MainProps {
 
 export default function Main({ children }: MainProps) {
     return (
-        <main
-            className="">{children}</main>
+        <main className="art:p:base">{children}</main>
     );
 }
