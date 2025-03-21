@@ -3,7 +3,7 @@ import Image from "next/image";
 import logoMac from "@/assets/icons/logo-mac.svg";
 
 export default function Footer() {
-    const currentYear = new Date().getFullYear();
+    // const currentYear = new Date().getFullYear();
     return (
         <footer className="
             art:w:full
@@ -13,7 +13,7 @@ export default function Footer() {
             art:align-items:center
             art:justify-content:space-between
 
-            art:bg:white-02
+            art:bg:black:10%
             art:font:black-01
         "
         >
@@ -26,9 +26,9 @@ export default function Footer() {
                     width={150}
                 />
             </a>
-            <p className="art:font:regular art:font:lg">
+            {/* <p className="art:font:regular art:font:lg">
                 &copy; {currentYear}
-            </p>
+            </p> */}
         </footer>
     );
 }

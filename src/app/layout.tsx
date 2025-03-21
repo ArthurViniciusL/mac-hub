@@ -25,7 +25,6 @@ export default function RootLayout({
         >
             <body
                 className="
-                    art:h:device
                     art:flex 
                     art:gap:lg
                     art:col                 

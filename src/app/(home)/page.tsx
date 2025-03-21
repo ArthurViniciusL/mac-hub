@@ -1,6 +1,6 @@
 "use client";
 
-import Cards from "./components/Cards";
+import Mural from "./components/Mural";
 
 // import { useState } from "react";
 
@@ -8,7 +8,7 @@ export default function Home() {
 
     return (
         <>
-            <Cards />
+            <Mural />
         </>
     );
 }

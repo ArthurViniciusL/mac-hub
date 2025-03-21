@@ -9,6 +9,7 @@ export const CardsContent = [
         "about": "Visualize o mural com os avisos mais recentes.",
         "link": "",
         "banner": banner_01,
+        "aboutBanner": "Os Girassóis Pintura de Vincent - van Gogh.",
         "icon": "IconhigHlightsOfTheDay",
         "color": "yellow-01"
     },
@@ -18,16 +19,18 @@ export const CardsContent = [
         "about": "Visualize o calendário interno do museu.",
         "link": "",
         "banner": banner_02,
+        "aboutBanner": "Caminho nos Campos de trigo em Pourville - Claude Monet.",
         "icon": "IconEventsCalendar",
         "color": "purple-02"
     },
     {
-        "id": 3,
+        "id": 2,
         "title": "Principais Documentos",
-        "about": "Visualize o calendário interno do museu.",
+        "about": "Acesse a pasta com os principais documentos do MAC.",
         "link": "",
         "banner": banner_03,
+        "aboutBanner": "Marilyn Monroe portfolio - Andy Warhol.",
         "icon": "IconEventsCalendar",
         "color": "red-02"
-    }
+    },
 ]
