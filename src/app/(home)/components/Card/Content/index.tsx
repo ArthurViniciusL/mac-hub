@@ -1,6 +1,6 @@
 import Title from "./Title";
-import Icon from "./Icon";
 import Description from "./Description";
+import PageIcon from "@/components/PageIcon";
 
 interface AboutProps {
     content: any;
@@ -14,7 +14,7 @@ export default function Content({ content }: AboutProps) {
         <>
             <a className="art:p:base art:flex art:gap:base art:flex:col">
                 <div className="art:flex art:flex:row art:gap:sm">
-                    <Icon icon={content.icon} color={content.color} />
+                    <PageIcon name={content.icon} size={20} color={content.color} />
                     <Title titles={content.title} />
                 </div>
                 <Description description={content.about}/>

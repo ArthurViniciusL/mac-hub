@@ -9,7 +9,7 @@
 export {    
     PanelTopOpen as IconOpenMenu,
     PanelTopClose as IconCloseMenu,
-    ScrollText as IconhigHlightsOfTheDay,
+    ScrollText as IconHlightsOfTheDay,
     CalendarRange as IconEventsCalendar,
     ImageOff as IconImageNotFount,
     FileStack as IconMainDocuments

@@ -9,8 +9,8 @@ export const CardsContent = [
         "about": "Visualize o mural com os avisos mais recentes.",
         "link": "",
         "banner": banner_01,
-        "aboutBanner": "Os Girassóis Pintura de Vincent - van Gogh.",
-        "icon": "IconhigHlightsOfTheDay",
+        "aboutBanner": "Os Girassóis Pintura de Vincent - Van Gogh.",
+        "icon": "IconHlightsOfTheDay",
         "color": "yellow-01"
     },
     {

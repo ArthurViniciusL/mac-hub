@@ -1,5 +1,5 @@
 import { IconImageNotFount } from "@/app.modules";
-import styles from "../../Mural.module.css";
+import styles from "@/app/(home)/components/Card/Card.module.css";
 import Image from "next/image";
 
 interface BannerProps {

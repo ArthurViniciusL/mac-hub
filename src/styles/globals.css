@@ -8,10 +8,13 @@ html {
 
 @keyframes fadeInOut {
   0% {
-      opacity: 0; /* Inicia invisível */
+    opacity: 0;
+    /* Inicia invisível */
   }
+
   100% {
-      opacity: 1; /* Volta a ficar invisível no final */
+    opacity: 1;
+    /* Volta a ficar invisível no final */
   }
 }
 
@@ -19,10 +22,20 @@ body {
   min-height: 100%;
 }
 
-header,main,footer {
+header,
+main,
+footer {
   padding: var(--base);
   padding-left: var(--_2xl);
   padding-right: var(--_2xl);
+}
+
+@media (max-width: 800px) {
+  header,
+  footer {
+    padding-left: var(--base);
+    padding-right: var(--base);
+  }
 }
 
 main {
