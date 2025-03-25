@@ -1,4 +1,4 @@
-import { IconEventsCalendar, IconHlightsOfTheDay, IconMainDocuments } from "@/app.modules";
+import { IconAppsMicrosoft, IconDocumentLibrary, IconEducational, IconEventPlanning, IconEventsCalendar, IconHlightsOfTheDay, IconMacGallery, IconMainDocuments, IconReportsAndMetrics, IconSpaceReservation, IconTeam } from "@/app.modules";
 
 interface PageIconProp {
     name: string;
@@ -16,6 +16,23 @@ export default function PageIcon({ name, size, color }: PageIconProp) {
                 return <IconEventsCalendar width={size} height={size} />;
             case "IconMainDocuments":
                 return <IconMainDocuments width={size} height={size} />;
+            case "IconAppsMicrosoft":
+                return <IconAppsMicrosoft width={size} height={size} />;
+            case "IconDocumentLibrary":
+                return <IconDocumentLibrary width={size} height={size} />;
+            case "IconEventPlanning":
+                return <IconEventPlanning width={size} height={size} />;
+            case "IconSpaceReservation":
+                return <IconSpaceReservation width={size} height={size} />;
+            case "IconReportsAndMetrics":
+                return <IconReportsAndMetrics width={size} height={size} />;
+            case "IconMacGallery":
+                return <IconMacGallery width={size} height={size} />;
+            case "IconEducational":
+                return <IconEducational width={size} height={size} />;
+            case "IconTeam":
+                return <IconTeam width={size} height={size} />;
+
             default:
                 return null;
         }

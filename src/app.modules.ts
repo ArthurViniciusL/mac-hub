@@ -9,10 +9,18 @@
 export {    
     PanelTopOpen as IconOpenMenu,
     PanelTopClose as IconCloseMenu,
-    ScrollText as IconHlightsOfTheDay,
-    CalendarRange as IconEventsCalendar,
     ImageOff as IconImageNotFount,
-    FileStack as IconMainDocuments
+    CloudSun as IconHlightsOfTheDay,
+    CalendarRange as IconEventsCalendar,
+    FileStack as IconMainDocuments,
+    LayoutGrid as IconAppsMicrosoft,
+    LibraryBig as IconDocumentLibrary,
+    ClipboardList as IconEventPlanning,
+    ReceiptText as IconSpaceReservation,
+    ChartSpline as IconReportsAndMetrics,
+    BookImage as IconMacGallery,
+    TentTree as IconEducational,
+    Flower2 as IconTeam
 
 } from // itens as newName
 'lucide-react';

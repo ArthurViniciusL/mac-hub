@@ -25,27 +25,16 @@ body {
 header,
 main,
 footer {
+  width: 100%;
   padding: var(--base);
-  padding-left: var(--_2xl);
-  padding-right: var(--_2xl);
-}
-
-@media (max-width: 800px) {
-  header,
-  footer {
-    padding-left: var(--base);
-    padding-right: var(--base);
-  }
+  padding-left: var(--xl);
+  padding-right: var(--xl);
 }
 
 main {
-  width: 100%;
+  /* width: 95%; */
   max-width: 150rem;
   min-height: 100dvh;
-}
-
-.art\:log\:red {
-  border: solid red 0.5px;
 }
 
 li {
@@ -60,6 +49,10 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+.art\:log\:red {
+  border: solid red 0.5px;
 }
 
 .art\:font\:capitalize {

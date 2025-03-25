@@ -26,7 +26,7 @@ export default function RootLayout({
             <body
                 className="
                     art:flex 
-                    art:gap:lg
+                    art:gap:sm
                     art:col                 
                     art:flex 
                     art:align-items:center 

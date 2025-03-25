@@ -7,12 +7,13 @@ import appLogo from "@/assets/icons/app-logo/mac_hub.svg";
 import { IconOpenMenu } from "@/app.modules";
 
 export default function Header() {
+    
     const [title] = useState<string>("Mural");
     const [menu] = useState<boolean>(true);
+
     return (
         <>
             <header className="
-                art:w:full 
                 art:flex 
                 art:row 
                 art:gap:base 

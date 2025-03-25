@@ -6,7 +6,6 @@ export default function Footer() {
     // const currentYear = new Date().getFullYear();
     return (
         <footer className="
-            art:w:full
             art:flex
             art:row
             art:gap:base
@@ -17,10 +16,7 @@ export default function Footer() {
             art:font:black-01
         "
         >
-            <a 
-                href="https://museumaccg.org.br/"
-                target="_blank"
-            >
+            <a href="https://museumaccg.org.br/" target="_blank" >
                 <Image src={logoMac}
                     alt="logomarca do mac"
                     width={150}
