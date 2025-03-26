@@ -9,11 +9,13 @@ import { IconOpenMenu } from "@/app.modules";
 export default function Header() {
     
     const [title] = useState<string>("Mural");
-    const [menu] = useState<boolean>(true);
+    const [menu] = useState<boolean>(false);
 
     return (
         <>
             <header className="
+                art:w:full
+                art:m:base
                 art:flex 
                 art:row 
                 art:gap:base 
@@ -21,13 +23,13 @@ export default function Header() {
             "
             >
                 <div className="
-                    art:flex 
+                    art:flex
                     art:row 
                     art:gap:base 
                     art:align-items:flex-start
                 "
                 >
-                    <Image className=""
+                    <Image className="art:no-dark:bg:white-01 art:border-rd:sm"
                         src={appLogo}
                         alt=""
                         height={90}

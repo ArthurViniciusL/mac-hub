@@ -15,15 +15,7 @@ export default function Banner({ path, alt, about }: BannerProps) {
                 {
                     !path ?
                         (
-                            <div className="
-                                                art:w:full
-                                                art:h:full
-                                                art:font:black-04
-                                                art:bg:white-02
-                                                art:flex
-                                                art:justify-content:center
-                                                art:align-items:center
-                                            "
+                            <div className=" art:w:full art:h:full art:bg:white-02 art:flex art:justify-content:center art:align-items:center"
                             >
                                 <IconImageNotFount />
                             </div>

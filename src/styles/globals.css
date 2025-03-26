@@ -19,22 +19,17 @@ html {
 }
 
 body {
-  min-height: 100%;
-}
-
-header,
-main,
-footer {
-  width: 100%;
-  padding: var(--base);
-  padding-left: var(--xl);
-  padding-right: var(--xl);
+  width: 95%;
+  max-width: 108rem;
 }
 
 main {
   /* width: 95%; */
-  max-width: 150rem;
+  /* max-width: 100rem; */
+  width: 100%;
   min-height: 100dvh;
+  display: flex;
+  justify-content: center;
 }
 
 li {

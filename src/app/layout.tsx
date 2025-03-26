@@ -18,6 +18,9 @@ export default function RootLayout({
             className="
                 art:w:device
                 art:h:device
+                art:flex
+                art:flex:col
+                art:align-items:center
                 art:bg:white-01
                 art:font:black-01
             "
@@ -25,7 +28,6 @@ export default function RootLayout({
         >
             <body
                 className="
-                    art:flex 
                     art:gap:sm
                     art:col                 
                     art:flex 
