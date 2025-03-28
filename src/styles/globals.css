@@ -19,17 +19,11 @@ html {
 }
 
 body {
-  width: 95%;
-  max-width: 108rem;
+
 }
 
 main {
-  /* width: 95%; */
-  /* max-width: 100rem; */
-  width: 100%;
-  min-height: 100dvh;
-  display: flex;
-  justify-content: center;
+
 }
 
 li {

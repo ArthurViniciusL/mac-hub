@@ -4,10 +4,11 @@ interface DescriptionProps {
 
 
 export default function Description({ description }: DescriptionProps) {
+
     return (
         <>
             <p
-                title={description}
+                title={description.toLocaleLowerCase().split(".")[0]}
                 className="art:font:base art:font:black-03"
             >
                 {
@@ -20,7 +21,7 @@ export default function Description({ description }: DescriptionProps) {
                         :
                         (
                             <>
-                                {description}
+                                {description.split(".")}.
                             </>
                         )
                 }
