@@ -44,22 +44,3 @@ a:hover {
   border: solid red 0.5px;
 }
 
-.art\:font\:capitalize {
-  text-transform: capitalize;
-}
-
-.art\:overflow\:hidden {
-  overflow: hidden;
-}
-
-.art\:overflow\:scroll {
-  overflow: scroll;
-}
-
-.art\:w\:fit {
-  width: fit-content;
-}
-
-.art\:h\:fit {
-  height: fit-content;
-}
