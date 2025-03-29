@@ -13,7 +13,7 @@ export default function Home() {
 
     return (
         <>
-        
+
             <Card>
                 {
                     data.map((card, index) => (

@@ -6,7 +6,7 @@ export default function Title({ titles }: TitleProps) {
     return (
         <>
             <h1 className="art:font:bold art:font:lg art:font:capitalize"
-                title={titles.toLocaleLowerCase()[0].split(".")[0]}
+                title={titles.toLocaleLowerCase()}
             >
                 {
                     titles.length >= 18 ?

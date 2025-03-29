@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "@/styles/globals.css";
 import Header from "@/components/layout/Header";
-import Footer from "@/components/layout/Footer";
+import NavMenu from "@/components/layout/NavMenu";
 
 export const metadata: Metadata = {
     title: "MAC HUB",
@@ -14,30 +14,17 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <html
-            className="
-                art:w:device
-                art:h:device
-                art:flex
-                art:flex:col
-                art:align-items:center
-                art:bg:white-01
-                art:font:black-01
-            "
-            lang="pt-br"
+        <html lang="pt-br"
+            className="art:w:device art:h:device art:bg:white-01 art:font:black-01"
         >
-            <body
-                className="
-                    art:gap:sm
-                    art:col                 
-                    art:flex 
-                    art:align-items:center 
-                    art:flex:col
-            "
-            >
-                <Header />
-                <main>{children}</main>
-                <Footer/>
+            <body className="art:w:full art:flex art:flex:row art:overflow:hidden">
+                <NavMenu />
+                <div className="art:w:full art:flex art:flex:col art:align-items:center art:overflow:auto">
+                    <section className="art:w:full art:max-w:80 art:p:base art:flex art:flex:col art:gap:xl art:align-items:center">
+                        <Header />
+                        <main >{children}</main>
+                    </section>
+                </div>
             </body>
         </html>
     );

@@ -4,6 +4,7 @@ html {
   scrollbar-width: none;
   opacity: 0;
   animation: fadeInOut 2s ease-in-out forwards;
+  display: flex;
 }
 
 @keyframes fadeInOut {
@@ -22,9 +23,13 @@ body {
 
 }
 
-main {
+main {}
 
-}
+/* aside {
+  width: 15rem;
+  height: 100dvh;
+} */
+
 
 li {
   list-style: none;
@@ -44,3 +49,41 @@ a:hover {
   border: solid red 0.5px;
 }
 
+.art\:border\:thin {
+  border-width: 0.1rem;
+}
+
+.art\:font\:semibold {
+  font-weight: 600;
+}
+
+.art\:max-w\:30 {
+  max-width: 30rem;
+}
+
+.art\:max-w\:80 {
+  max-width: 80rem;
+}
+
+.art\:overflow\:hidden {
+  /* art:overflow:hidden */
+  overflow: hidden;
+}
+
+.art\:overflow\:auto {
+  /* art:overflow:auto */
+  overflow: auto;
+}
+
+.art\:fixed {
+  position: fixed;
+}
+
+.art\:absolute {
+  position: absolute;
+}
+
+
+.art\:font\:capitalize {
+  text-transform: capitalize;
+}

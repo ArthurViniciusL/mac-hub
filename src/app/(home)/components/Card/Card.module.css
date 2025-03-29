@@ -9,7 +9,7 @@
     flex-wrap: wrap;
 
     align-items: flex-start;
-    justify-content: center;
+    justify-content: flex-start;
     /* 
     display: grid;
     grid-template-columns: repeat(4, 1fr);
