@@ -19,9 +19,7 @@ html {
   }
 }
 
-body {
-
-}
+body {}
 
 main {}
 
@@ -86,4 +84,8 @@ a:hover {
 
 .art\:font\:capitalize {
   text-transform: capitalize;
+}
+
+.art\:min-h\:08 {
+  min-height: 8rem;
 }

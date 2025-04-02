@@ -6,9 +6,10 @@
  * its projects
  */
 
-export {    
-    PanelTopOpen as IconOpenMenu,
-    PanelTopClose as IconCloseMenu,
+export {
+    LayoutPanelLeft as IconMural,
+    ChevronsRight as IconOpenMenu,
+    ChevronsLeft as IconCloseMenu,
     ImageOff as IconImageNotFount,
     CloudSun as IconHlightsOfTheDay,
     CalendarRange as IconEventsCalendar,
@@ -23,4 +24,4 @@ export {
     Flower2 as IconTeam
 
 } from // itens as newName
-'lucide-react';
+    'lucide-react';

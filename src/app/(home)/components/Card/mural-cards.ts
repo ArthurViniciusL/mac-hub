@@ -9,6 +9,7 @@ import banner_08 from "@/assets/images/banners/A Criação de Adão - Michelange
 import banner_09 from "@/assets/images/banners/A Casa Amarela - Vincent van Gogh.png";
 import banner_10 from "@/assets/images/banners/O Sepultamento de Cristo Pintura - Caravaggio.png";
 import banner_11 from "@/assets/images/banners/O Nascimento de Vênus - Sandro Botticelli.png";
+import AppRoutes from "@/app.routes";
 
 
 export const CardsContent = [
@@ -18,7 +19,7 @@ export const CardsContent = [
         "icon": "IconHlightsOfTheDay",
         "title": "destaques do dia",
         "about": "Visualize o mural com os avisos mais recentes",
-        "link": "",
+        "link": AppRoutes.warnings,
         "aboutBanner": "Os Girassóis Pintura de Vincent - Van Gogh",
         "color": "yellow-01"
     },

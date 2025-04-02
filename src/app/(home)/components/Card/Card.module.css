@@ -10,25 +10,7 @@
 
     align-items: flex-start;
     justify-content: flex-start;
-    /* 
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: var(--base);
-
-    align-items: start;
-    justify-items: center;
-     */
 }
-
-/* 
-@media (max-width: 900px) {
-    .container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-}
-*/
 
 @media (max-width: 800px) {
     .container {
@@ -38,12 +20,18 @@
 }
 
 .box {
-    width: 100%;
+    width: 85%;
     max-width: 24rem;
     height: 18rem;
     border-width: 0.1rem;
     overflow: hidden;
     flex-direction: column;
+}
+
+@media (max-width:1024px) {
+    .box {
+        max-width: 22rem;
+    }
 }
 
 .containerBanner {

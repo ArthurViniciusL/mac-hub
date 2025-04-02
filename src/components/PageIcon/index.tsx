@@ -1,4 +1,4 @@
-import { IconAppsMicrosoft, IconDocumentLibrary, IconEducational, IconEventPlanning, IconEventsCalendar, IconHlightsOfTheDay, IconMacGallery, IconMainDocuments, IconReportsAndMetrics, IconSpaceReservation, IconTeam } from "@/app.modules";
+import { IconAppsMicrosoft, IconDocumentLibrary, IconEducational, IconEventPlanning, IconEventsCalendar, IconHlightsOfTheDay, IconMacGallery, IconMainDocuments, IconMural, IconReportsAndMetrics, IconSpaceReservation, IconTeam } from "@/app.modules";
 
 interface PageIconProp {
     name: string;
@@ -10,6 +10,8 @@ export default function PageIcon({ name, size, color }: PageIconProp) {
 
     function returnAnIcon(name: string, size: number) {
         switch (name) {
+            case "IconMural":
+                return <IconMural width={size} height={size} />;
             case "IconHlightsOfTheDay":
                 return <IconHlightsOfTheDay width={size} height={size} />;
             case "IconEventsCalendar":

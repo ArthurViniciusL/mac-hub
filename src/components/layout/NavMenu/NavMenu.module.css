@@ -1,19 +1,39 @@
 .container {
-     width: 15rem;
-    /* width: fit-content; */
+    /* width: 16rem; */
+    width: fit-content;
     height: 100dvh;
+    
+    overflow-x: hidden;
     overflow-y: auto;
+
     display: flex;
     flex-direction: column;
+    scrollbar-width: none;
 }
 
-.top {
+.btn {
+    width: 100%;
+    cursor: pointer;
+    padding: var(--sm);
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    align-items: center;
+    justify-content: start;
+    border-radius: var(--base);
+    background: none;
+    color: var(--black-01);
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.btn:hover {
+    color: var(--black-01);
+    background: var(--white-03);
 }
 
 .content {
-    width: 100%;
+    width: 16rem;
     height: 100%;
     display: flex;
     align-items: center;
