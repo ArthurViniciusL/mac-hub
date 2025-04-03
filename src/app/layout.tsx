@@ -17,7 +17,8 @@ export default function RootLayout({
         <html lang="pt-br"
             className="art:w:device art:h:device art:bg:white-01 art:font:black-01"
         >
-            <body className="art:w:full art:flex art:flex:row art:overflow:hidden">
+            {/* art:flex:row */}
+            <body className="art:w:full art:flex art:overflow:hidden">
                 <NavMenu />
                 <div className="art:w:full art:flex art:flex:col art:align-items:center art:overflow:auto">
                     <section className="art:w:full art:max-w:80 art:p:base art:flex art:flex:col art:gap:xl art:align-items:center">

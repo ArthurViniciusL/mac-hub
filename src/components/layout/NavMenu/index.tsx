@@ -2,15 +2,19 @@
 
 import { useEffect, useState } from "react";
 
-import NavMenuDesktop from "./desktop";
+import styles from "./NavMenu.module.css";
+
 import { CardsContent } from "@/app/(home)/components/Card/mural-cards";
+import AppRoutes from "@/app.routes";
 
-
+import LogoMacHub from "@/components/LogoMacHub";
+import ButtonNavMenu from "@/components/ButtonNavMenu";
+import PageIcon from "@/components/PageIcon";
 
 export interface NavMenuProps {
     state: boolean,
-    setSate: (state: boolean) => void,
-    content: {
+    setState: (state: boolean) => void,
+    menus: {
         icon: string,
         title: string,
         color: string,
@@ -21,8 +25,9 @@ export interface NavMenuProps {
 export default function NavMenu() {
 
     const menus = CardsContent;
-    const [isClose, setIsClose] = useState<boolean>(false);
-    const [isMobile, setIsMobile] = useState<boolean>(false);
+    const [isOpen, setIsOpen] = useState<boolean>(true);
+
+    const [isMobile, setIsMobile] = useState<boolean>(true);
 
     useEffect(() => {
         function handleResize() { setIsMobile(window.innerWidth <= 800); }
@@ -31,13 +36,105 @@ export default function NavMenu() {
         return () => window.removeEventListener("resize", handleResize);
     }, []);
 
-    function handleIsClose() {
-        setIsClose(!isClose);
+    function handleIsOpen() {
+        setIsOpen(!isOpen)
+    }
+
+    const art = {
+        aside: "art:p:sm art:gap:2xl",
+        nav: "art:h:full art:flex art:justi align-items:center",
+        ul: "art:flex art:flex:col art:gap:base",
+        li: "art:border-b:solid art:border:thin art:border:white-03 art:hover:border:none",
+        btn: "art:w:full art:cursor:pointer art:p:sm art:flex art:flex:row art:align-items:center art:border-rd:base art:bg:none art:hover:bg:white-02 art:font:black-01 art:hover:font:black-01 art:font:capitalize art:font:semibold",
     }
 
     return (
         <>
-            <NavMenuDesktop content={menus} state={isClose} setSate={handleIsClose} />
+                {/* isMobile ?
+                (
+                    <>
+                    </>
+                )
+                :
+                (
+                    <>
+
+                    </>
+                ) */}
+
+            <aside className={`${styles.container} ${art.aside}`}>
+                <div className={`${styles.top}`}>
+                    <LogoMacHub size={90} />
+                    <ButtonNavMenu state={isOpen} setState={handleIsOpen} />
+                </div>
+                {
+                    isOpen ?
+                        (
+                            <>
+                                <nav id="openMenu" className={`${art.nav} ${styles.openMenu}`}>
+                                    <ul className={art.ul}>
+                                        <li title="mural" className={art.li}>
+                                            <a href={AppRoutes.home}>
+                                                <button className={art.btn}>
+                                                    <PageIcon name="IconMural" color="black-01" size={20} />
+                                                    Mural
+                                                </button>
+                                            </a>
+                                        </li>
+                                        {
+                                            menus.map((menu, index) => (
+                                                <li key={index} title={menu.title.toLocaleLowerCase()} className={art.li}>
+                                                    <a href={menu.link} target="_blank">
+                                                        <button className={art.btn}>
+                                                            <PageIcon name={menu.icon} color={menu.color} size={20} />
+                                                            {
+                                                                menu.title.length >= 18 ?
+                                                                    (
+                                                                        menu.title.slice(0, 18) + "..."
+                                                                    )
+                                                                    :
+                                                                    (
+                                                                        menu.title
+                                                                    )
+                                                            }
+                                                        </button>
+                                                    </a>
+                                                </li>
+                                            ))
+                                        }
+                                    </ul>
+                                </nav >
+                            </>
+                        )
+                        :
+                        (
+                            <>
+                                <nav id="closeMenu" className={`${art.nav} art:w:full`}>
+                                    <ul className={art.ul}>
+                                        <li title="mural" className={art.li}>
+                                            <a href={AppRoutes.home}>
+                                                <button className={art.btn}>
+                                                    <PageIcon name="IconMural" color="black-01" size={20} />
+                                                </button>
+                                            </a>
+                                        </li>
+                                        {
+                                            menus.map((menu, index) => (
+                                                <li key={index} title={menu.title.toLocaleLowerCase()} className={art.li}>
+                                                    <a href={menu.link} target="_blank">
+                                                        <button className={art.btn}>
+                                                            <PageIcon name={menu.icon} color={menu.color} size={20} />
+                                                        </button>
+                                                    </a>
+                                                </li>
+                                            ))
+                                        }
+                                    </ul>
+                                </nav >
+                            </>
+                        )
+                }
+            </aside >
         </>
     );
 }
