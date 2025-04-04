@@ -3,7 +3,7 @@ import { IconCloseMenu, IconOpenMenu } from "@/app.modules";
 
 interface ButtonNavMenuProps {
     state: boolean;
-    setState: (state: boolean) => boolean;
+    setState: () => void;
 }
 
 export default function ButtonNavMenu({ state, setState }: ButtonNavMenuProps) {
