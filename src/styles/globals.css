@@ -19,16 +19,6 @@ html {
   }
 }
 
-body {}
-
-main {}
-
-/* aside {
-  width: 15rem;
-  height: 100dvh;
-} */
-
-
 li {
   list-style: none;
 }
@@ -49,16 +39,6 @@ a:hover {
 
 .mobile {
   display: none;
-}
-
-@media (max-width: 800px) {
-  .desktop {
-    display: none;
-  }
-  
-  .mobile {
-    display: flex;
-  }
 }
 
 @media (prefers-color-scheme: dark) {

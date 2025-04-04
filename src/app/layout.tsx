@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "@/styles/globals.css";
 import Header from "@/components/layout/Header";
 import NavMenu from "@/components/layout/NavMenu";
+import { AppProvider } from "@/context/AppProvider";
 
 export const metadata: Metadata = {
     title: "MAC HUB",
@@ -14,19 +15,18 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <html lang="pt-br"
-            className="art:w:device art:h:device art:bg:white-01 art:font:black-01"
-        >
-            {/* art:flex:row */}
-            <body className="art:w:full art:flex art:overflow:hidden">
-                <NavMenu />
-                <div className="art:w:full art:flex art:flex:col art:align-items:center art:overflow:auto">
-                    <section className="art:w:full art:max-w:80 art:p:base art:flex art:flex:col art:gap:xl art:align-items:center">
-                        <Header />
-                        <main >{children}</main>
-                    </section>
-                </div>
-            </body>
-        </html>
+        <AppProvider>
+            <html lang="pt-br" className="art:w:device art:h:device art:bg:white-01 art:font:black-01">
+                <body className="art:w:full art:flex art:overflow:hidden">
+                    <NavMenu />
+                    <div className="art:w:full art:flex art:flex:col art:align-items:center art:overflow:auto">
+                        <section className="art:w:full art:max-w:80 art:p:base art:flex art:flex:col art:gap:xl art:align-items:center">
+                            <Header />
+                            <main >{children}</main>
+                        </section>
+                    </div>
+                </body>
+            </html>
+        </AppProvider>
     );
 }
