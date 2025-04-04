@@ -1,6 +1,6 @@
 import Title from "./Title";
 import Description from "./Description";
-import PageIcon from "@/components/PageIcon";
+import PageIcon from "@/components/Ui/Icons/PageIcon";
 import AppRoutes from "@/app.routes";
 
 interface AboutProps {

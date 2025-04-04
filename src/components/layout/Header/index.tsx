@@ -7,7 +7,7 @@ import { useEffect, useState } from "react";
 import { IconOpenMenu } from "@/app.modules";
 import NavMenuMobile from "../NavMenu/Mobile";
 import { CardsContent } from "@/app/(home)/components/Card/mural-cards";
-import LogoMacHub from "@/components/LogoMacHub";
+import LogoMacHub from "@/components/Ui/Icons/LogoMacHub";
 import ButtonNavMenu from "@/components/ButtonNavMenu";
 
 export default function Header() {

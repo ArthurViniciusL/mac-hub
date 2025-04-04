@@ -7,9 +7,9 @@ import styles from "./NavMenu.module.css";
 import { CardsContent } from "@/app/(home)/components/Card/mural-cards";
 import AppRoutes from "@/app.routes";
 
-import LogoMacHub from "@/components/LogoMacHub";
+import LogoMacHub from "@/components/Ui/Icons/LogoMacHub";
 import ButtonNavMenu from "@/components/ButtonNavMenu";
-import PageIcon from "@/components/PageIcon";
+import PageIcon from "@/components/Ui/Icons/PageIcon";
 import { useDeviceContext } from "@/hooks/useDeviceContext";
 
 export interface NavMenuProps {

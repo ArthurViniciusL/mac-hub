@@ -1,6 +1,6 @@
 // import Image from "next/image";
 
-import LogoMac from "@/components/MacLogo";
+import LogoMac from "@/components/Ui/Icons/MacLogo";
 
 
 
