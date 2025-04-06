@@ -1,24 +1,10 @@
 "use client";
+import { useState } from "react";
 
-import Image from "next/image";
-import { useEffect, useState } from "react";
-
-
-import { IconOpenMenu } from "@/app.modules";
-import NavMenuMobile from "../NavMenu/Mobile";
-import { CardsContent } from "@/app/(home)/components/Card/mural-cards";
-import LogoMacHub from "@/components/Ui/Icons/LogoMacHub";
-import ButtonNavMenu from "@/components/ButtonNavMenu";
 
 export default function Header() {
 
     const [title] = useState<string>("Mural");
-    const [isOpen, setIsOpen] = useState<boolean>(false);
-    
-    function handleisOpen() {
-        
-    }
-    
 
     const art = {
         header: "art:w:full art:flex art:gap:base art:flex:row art:justify-content:center",
