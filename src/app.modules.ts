@@ -10,6 +10,8 @@ export {
     LayoutPanelLeft as IconMural,
     ChevronsRight as IconOpenMenu,
     ChevronsLeft as IconCloseMenu,
+    ChevronsUp as IconOpenMobileMenu,
+    ChevronsDown as IconCloseMobileMenu,
     ImageOff as IconImageNotFount,
     CloudSun as IconHlightsOfTheDay,
     CalendarRange as IconEventsCalendar,
@@ -21,7 +23,7 @@ export {
     ChartSpline as IconReportsAndMetrics,
     BookImage as IconMacGallery,
     TentTree as IconEducational,
-    Flower2 as IconTeam
+    Flower2 as IconTeam,
 
 } from // itens as newName
     'lucide-react';

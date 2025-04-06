@@ -89,6 +89,10 @@ a:hover {
   text-transform: capitalize;
 }
 
+.art\:h\:03 {
+  height: 3rem;
+}
+
 .art\:min-h\:08 {
   min-height: 8rem;
 }
