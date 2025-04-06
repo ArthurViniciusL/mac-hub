@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import "@/styles/globals.css";
 import Header from "@/components/layout/Header";
-import NavMenu from "@/components/layout/NavMenu";
+import NavMenu from "@/components/layout/NavMenu/Desktop";
 import { AppProvider } from "@/context/AppProvider";
+import NavMenuMobile from "@/components/layout/NavMenu/Mobile";
 
 export const metadata: Metadata = {
     title: "MAC HUB",
@@ -23,6 +24,7 @@ export default function RootLayout({
                         <section className="art:w:full art:max-w:80 art:p:base art:flex art:flex:col art:gap:xl art:align-items:center">
                             <Header />
                             <main >{children}</main>
+                            <NavMenuMobile/>
                         </section>
                     </div>
                 </body>

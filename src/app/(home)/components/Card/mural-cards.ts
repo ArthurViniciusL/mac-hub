@@ -15,6 +15,16 @@ import AppRoutes from "@/app.routes";
 export const CardsContent = [
     {
         "id": 0,
+        "banner": "",
+        "icon": "IconMural",
+        "title": "mural de links",
+        "about": "Visualize o mural com links do Mac HUB",
+        "link": AppRoutes.home,
+        "aboutBanner": "",
+        "color": "yellow-01"
+    },
+    {
+        "id": 1,
         "banner": banner_01,
         "icon": "IconHlightsOfTheDay",
         "title": "destaques do dia",
@@ -24,7 +34,7 @@ export const CardsContent = [
         "color": "yellow-01"
     },
     {
-        "id": 1,
+        "id": 2,
         "banner": banner_02,
         "icon": "IconEventsCalendar",
         "title": "Calendário de Eventos",
@@ -34,7 +44,7 @@ export const CardsContent = [
         "color": "purple-03"
     },
     {
-        "id": 2,
+        "id": 3,
         "banner": banner_03,
         "icon": "IconMainDocuments",
         "title": "Principais Documentos",
@@ -44,7 +54,7 @@ export const CardsContent = [
         "color": "red-03"
     },
     {
-        "id": 3,
+        "id": 4,
         "banner": banner_04,
         "icon": "IconAppsMicrosoft",
         "title": "App's Microsoft",
@@ -54,7 +64,7 @@ export const CardsContent = [
         "color": "blue-01"
     },
     {
-        "id": 4,
+        "id": 5,
         "banner": banner_05,
         "icon": "IconDocumentLibrary",
         "title": "Biblioteca de documentos",
@@ -64,7 +74,7 @@ export const CardsContent = [
         "color": "orange-01"
     },
     {
-        "id": 5,
+        "id": 6,
         "banner": banner_06,
         "icon": "IconEventPlanning",
         "title": "Planejamento de eventos",
@@ -74,7 +84,7 @@ export const CardsContent = [
         "color": "green-01"
     },
     {
-        "id": 6,
+        "id": 7,
         "banner": banner_07,
         "icon": "IconSpaceReservation",
         "title": "Reserva de espaços",
@@ -84,7 +94,7 @@ export const CardsContent = [
         "color": "blue-01"
     },
     {
-        "id": 7,
+        "id": 8,
         "banner": banner_08,
         "icon": "IconReportsAndMetrics",
         "title": "Relatórios e Métricas",
@@ -94,7 +104,7 @@ export const CardsContent = [
         "color": "purple-04"
     },
     {
-        "id": 8,
+        "id": 9,
         "banner": banner_09,
         "icon": "IconMacGallery",
         "title": "Galeria Mac",
@@ -104,7 +114,7 @@ export const CardsContent = [
         "color": "yellow-02"
     },
     {
-        "id": 9,
+        "id": 10,
         "banner": banner_10,
         "icon": "IconEducational",
         "title": "Educativo",
@@ -114,7 +124,7 @@ export const CardsContent = [
         "color": "green-01"
     },
     {
-        "id": 10,
+        "id": 11,
         "banner": banner_11,
         "icon": "IconTeam",
         "title": "Equipe",
