@@ -20,7 +20,7 @@ export const CardsContent = [
         "title": "mural",
         "about": "Visualize o mural com links do Mac HUB",
         "link": AppRoutes.home,
-        "target": "",
+        "target": "_self",
         "aboutBanner": "",
         "color": "black-02"
     },

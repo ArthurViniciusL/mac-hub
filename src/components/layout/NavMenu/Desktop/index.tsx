@@ -18,7 +18,8 @@ export interface NavMenuProps {
         icon: string,
         title: string,
         color: string,
-        link: string
+        link: string,
+        target: string
     }[]
 }
 
@@ -66,7 +67,7 @@ export default function NavMenu() {
                                                         {
                                                             menus.map((menu, index) => (
                                                                 <li key={index} title={menu.title.toLocaleLowerCase()} className={art.li}>
-                                                                    <a href={menu.link} target="_blank">
+                                                                    <a href={menu.link} target={menu.target}>
                                                                         <button className={art.btn}>
                                                                             <PageIcon name={menu.icon} color={menu.color} size={20} />
                                                                             {

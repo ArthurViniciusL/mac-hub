@@ -18,6 +18,13 @@ export default function NavMenuMobile() {
 
     const menus = CardsContent;
 
+    /**
+     * TODO
+     * [] - Adicionar botão para abrir o menu
+     * [] - Fazer o menu aberto
+     * 
+    */
+
     return (
         <>
             {
@@ -30,7 +37,7 @@ export default function NavMenuMobile() {
                                         {
                                             menus.slice(0, 4).map((menu, index) => (
                                                 <li key={index}>
-                                                    <a href={menu.link}>
+                                                    <a href={menu.link} target={menu.target}>
                                                         <PageIcon name={menu.icon} size={20} color={menu.color} />
                                                     </a>
                                                 </li>
