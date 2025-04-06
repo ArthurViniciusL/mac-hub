@@ -5,7 +5,6 @@ import { useState } from "react";
 import styles from "./desktop.module.css";
 
 import { CardsContent } from "@/app/(home)/components/Card/mural-cards";
-import AppRoutes from "@/app.routes";
 
 import LogoMacHub from "@/components/Ui/Icons/LogoMacHub";
 import ButtonNavMenu from "@/components/ButtonNavMenu";

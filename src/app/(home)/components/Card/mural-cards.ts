@@ -20,6 +20,7 @@ export const CardsContent = [
         "title": "mural",
         "about": "Visualize o mural com links do Mac HUB",
         "link": AppRoutes.home,
+        "target": "",
         "aboutBanner": "",
         "color": "black-02"
     },
@@ -30,6 +31,7 @@ export const CardsContent = [
         "title": "destaques do dia",
         "about": "Visualize o mural com os avisos mais recentes",
         "link": AppRoutes.warnings,
+        "target": "_blank",
         "aboutBanner": "Os Girassóis Pintura de Vincent - Van Gogh",
         "color": "yellow-01"
     },
@@ -40,6 +42,7 @@ export const CardsContent = [
         "title": "Calendário de Eventos",
         "about": "Visualize o calendário interno do museu.",
         "link": "",
+        "target": "_blank",
         "aboutBanner": "Caminho nos Campos de trigo em Pourville - Claude Monet",
         "color": "purple-03"
     },
@@ -50,6 +53,7 @@ export const CardsContent = [
         "title": "Principais Documentos",
         "about": "Acesse a pasta com os principais documentos do MAC.",
         "link": "",
+        "target": "_blank",
         "aboutBanner": "Marilyn Monroe portfolio - Andy Warhol",
         "color": "red-03"
     },
@@ -60,6 +64,7 @@ export const CardsContent = [
         "title": "App's Microsoft",
         "about": "Acesse a launcher de aplicativos Microsoft",
         "link": "",
+        "target": "_blank",
         "aboutBanner": "O grito - Edvard Munch",
         "color": "blue-01"
     },
@@ -69,6 +74,7 @@ export const CardsContent = [
         "icon": "IconDocumentLibrary",
         "title": "Biblioteca de documentos",
         "about": "Acesse a pasta com todos os documentos do MAC.",
+        "target": "_blank",
         "aboutBanner": "O beijo - Gustav Klimt",
         "link": "",
         "color": "orange-01"
@@ -80,6 +86,7 @@ export const CardsContent = [
         "title": "Planejamento de eventos",
         "about": "Acesse os formulários criar um planejamento.",
         "link": "",
+        "target": "_blank",
         "aboutBanner": "Mulher no Espelho - Pablo Picasso",
         "color": "green-01"
     },
@@ -90,6 +97,7 @@ export const CardsContent = [
         "title": "Reserva de espaços",
         "about": "Acesse o formulário para reservar espaços no MAC.",
         "link": "",
+        "target": "_blank",
         "aboutBanner": "O Filho do Homem Pintura - René Magritte",
         "color": "blue-01"
     },
@@ -100,6 +108,7 @@ export const CardsContent = [
         "title": "Relatórios e Métricas",
         "about": "Visualize os dashboards do MAC.",
         "link": "",
+        "target": "_blank",
         "aboutBanner": "A Criação de Adão - Michelangelo Buonarroti",
         "color": "purple-04"
     },
@@ -110,6 +119,7 @@ export const CardsContent = [
         "title": "Galeria Mac",
         "about": "Acesse a pasta de arquivos multimídia do MAC.",
         "link": "",
+        "target": "_blank",
         "aboutBanner": "A Casa Amarela - Vincent van Gogh",
         "color": "yellow-02"
     },
@@ -120,6 +130,7 @@ export const CardsContent = [
         "title": "Educativo",
         "about": "Acesse as principais pastas do educativo do MAC.",
         "link": "",
+        "target": "_blank",
         "aboutBanner": "O Sepultamento de Cristo Pintura - Caravaggio",
         "color": "green-01"
     },
@@ -130,6 +141,7 @@ export const CardsContent = [
         "title": "Equipe",
         "about": "Visualize a lista de contatos da equipe do MAC.",
         "link": "",
+        "target": "_blank",
         "aboutBanner": "O Nascimento de Vênus - Sandro Botticelli",
         "color": "purple-01"
     }
