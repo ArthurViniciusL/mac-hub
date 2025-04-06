@@ -16,7 +16,7 @@ export default function Home() {
 
             <Card>
                 {
-                    data.map((card, index) => (
+                    data.slice(1).map((card, index) => (
                         <li key={index}
                             className={`
                             ${styles.box}

@@ -64,14 +64,6 @@ export default function NavMenu() {
                                             <>
                                                 <nav id="openMenu" className={`${art.nav} ${styles.openMenu}`}>
                                                     <ul className={art.ul}>
-                                                        <li title="mural" className={art.li}>
-                                                            <a href={AppRoutes.home}>
-                                                                <button className={art.btn}>
-                                                                    <PageIcon name="IconMural" color="black-01" size={20} />
-                                                                    Mural
-                                                                </button>
-                                                            </a>
-                                                        </li>
                                                         {
                                                             menus.map((menu, index) => (
                                                                 <li key={index} title={menu.title.toLocaleLowerCase()} className={art.li}>
@@ -102,13 +94,6 @@ export default function NavMenu() {
                                             <>
                                                 <nav id="closeMenu" className={`${art.nav} art:w:full`}>
                                                     <ul className={art.ul}>
-                                                        <li title="mural" className={art.li}>
-                                                            <a href={AppRoutes.home}>
-                                                                <button className={art.btn}>
-                                                                    <PageIcon name="IconMural" color="black-01" size={20} />
-                                                                </button>
-                                                            </a>
-                                                        </li>
                                                         {
                                                             menus.map((menu, index) => (
                                                                 <li key={index} title={menu.title.toLocaleLowerCase()} className={art.li}>

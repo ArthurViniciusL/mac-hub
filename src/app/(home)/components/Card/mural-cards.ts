@@ -17,11 +17,11 @@ export const CardsContent = [
         "id": 0,
         "banner": "",
         "icon": "IconMural",
-        "title": "mural de links",
+        "title": "mural",
         "about": "Visualize o mural com links do Mac HUB",
         "link": AppRoutes.home,
         "aboutBanner": "",
-        "color": "yellow-01"
+        "color": "black-02"
     },
     {
         "id": 1,

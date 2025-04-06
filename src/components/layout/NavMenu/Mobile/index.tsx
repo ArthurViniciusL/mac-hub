@@ -1,7 +1,6 @@
 "use client";
 
 import { IconOpenMobileMenu } from "@/app.modules";
-import styles from "./mobile.module.css";
 import { CardsContent } from "@/app/(home)/components/Card/mural-cards";
 import PageIcon from "@/components/Ui/Icons/PageIcon";
 import { useDeviceContext } from "@/hooks/useDeviceContext";
@@ -25,7 +24,7 @@ export default function NavMenuMobile() {
                 isMobile ?
                     (
                         <footer className={art.container}>
-                            <div className={`${art.box} ${styles.box}`} style={{"bottom":"0","left":"0"}}>
+                            <div className={art.box} style={{"bottom":"0","left":"0"}}>
                                 <nav className={art.nav}>
                                     <ul className={art.content}>
                                         {
