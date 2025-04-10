@@ -13,7 +13,6 @@ export default function Home() {
 
     return (
         <>
-
             <Card>
                 {
                     data.slice(1).map((card, index) => (
@@ -27,7 +26,7 @@ export default function Home() {
                             art:border-rd:lg
                             art:border:solid
                             art:border:white-03
-                            art:hover:border:${card.color}
+                            art:hover:border:${card.color}-01
                         `}
                         >
                             <Banner path={card.banner}

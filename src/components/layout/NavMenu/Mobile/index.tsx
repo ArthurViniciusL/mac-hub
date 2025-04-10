@@ -20,9 +20,9 @@ export default function NavMenuMobile() {
 
     /**
      * TODO
-     * [] - Adicionar botão para abrir o menu
+     * [x] - Adicionar botão para abrir o menu
      * [] - Fazer o menu aberto
-     * 
+     * [] - Adicionar as classes ao Art CSS
     */
 
     return (
@@ -31,20 +31,24 @@ export default function NavMenuMobile() {
                 isMobile ?
                     (
                         <footer className={art.container}>
-                            <div className={art.box} style={{"bottom":"0","left":"0"}}>
+                            <div className={art.box} style={{ "bottom": "0", "left": "0" }}>
                                 <nav className={art.nav}>
                                     <ul className={art.content}>
                                         {
                                             menus.slice(0, 4).map((menu, index) => (
                                                 <li key={index}>
                                                     <a href={menu.link} target={menu.target}>
-                                                        <PageIcon name={menu.icon} size={20} color={menu.color} />
+                                                        <button className="art:bg:white-01 art:hover:bg:white-02">
+                                                            <PageIcon name={menu.icon} size={20} color={menu.color} />
+                                                        </button>
                                                     </a>
                                                 </li>
                                             ))
                                         }
                                         <li>
+                                            <button className="art:w:full art:bg:white-01 art:hover:bg:white-02 art:font:blue-01 art:hover:font:black-01" style={{ "width": "2.2rem", "height": "2.2rem" }}>
                                             <IconOpenMobileMenu size={20} />
+                                            </button>
                                         </li>
                                     </ul>
                                 </nav>

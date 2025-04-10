@@ -3,7 +3,7 @@ import { IconAppsMicrosoft, IconDocumentLibrary, IconEducational, IconEventPlann
 interface PageIconProp {
     name: string;
     size: number;
-    color: string;
+    color?: string;
 }
 
 export default function PageIcon({ name, size, color }: PageIconProp) {
@@ -41,7 +41,7 @@ export default function PageIcon({ name, size, color }: PageIconProp) {
     }
 
     return (
-        <span className={`art:font:${color} art:border-rd:sm art:flex art:justify-content:center art:align-items:center`}
+        <span className={`art:font:${color}-01 art:bg:${color}:10% art:border-rd:sm art:flex art:justify-content:center art:align-items:center`}
             style={{ "width": "2.2rem", "height": "2.2rem" }}>
             {returnAnIcon(name, size)}
         </span>

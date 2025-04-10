@@ -22,7 +22,8 @@ export const CardsContent = [
         "link": AppRoutes.home,
         "target": "_self",
         "aboutBanner": "",
-        "color": "black-02"
+        "color": "black",
+       
     },
     {
         "id": 1,
@@ -33,7 +34,8 @@ export const CardsContent = [
         "link": AppRoutes.warnings,
         "target": "_blank",
         "aboutBanner": "Os Girassóis Pintura de Vincent - Van Gogh",
-        "color": "yellow-01"
+        "color": "yellow",
+        
     },
     {
         "id": 2,
@@ -44,7 +46,8 @@ export const CardsContent = [
         "link": "",
         "target": "_blank",
         "aboutBanner": "Caminho nos Campos de trigo em Pourville - Claude Monet",
-        "color": "purple-03"
+        "color": "purple",
+        
     },
     {
         "id": 3,
@@ -55,7 +58,8 @@ export const CardsContent = [
         "link": "",
         "target": "_blank",
         "aboutBanner": "Marilyn Monroe portfolio - Andy Warhol",
-        "color": "red-03"
+        "color": "red",
+       
     },
     {
         "id": 4,
@@ -63,10 +67,10 @@ export const CardsContent = [
         "icon": "IconAppsMicrosoft",
         "title": "App's Microsoft",
         "about": "Acesse a launcher de aplicativos Microsoft",
-        "link": "",
+        "link": AppRoutes.msApps,
         "target": "_blank",
         "aboutBanner": "O grito - Edvard Munch",
-        "color": "blue-01"
+        "color": "blue"
     },
     {
         "id": 5,
@@ -77,7 +81,7 @@ export const CardsContent = [
         "target": "_blank",
         "aboutBanner": "O beijo - Gustav Klimt",
         "link": "",
-        "color": "orange-01"
+        "color": "orange"        
     },
     {
         "id": 6,
@@ -88,7 +92,7 @@ export const CardsContent = [
         "link": "",
         "target": "_blank",
         "aboutBanner": "Mulher no Espelho - Pablo Picasso",
-        "color": "green-01"
+        "color": "green"
     },
     {
         "id": 7,
@@ -99,7 +103,7 @@ export const CardsContent = [
         "link": "",
         "target": "_blank",
         "aboutBanner": "O Filho do Homem Pintura - René Magritte",
-        "color": "blue-01"
+        "color": "blue"        
     },
     {
         "id": 8,
@@ -110,7 +114,7 @@ export const CardsContent = [
         "link": "",
         "target": "_blank",
         "aboutBanner": "A Criação de Adão - Michelangelo Buonarroti",
-        "color": "purple-04"
+        "color": "purple"        
     },
     {
         "id": 9,
@@ -121,7 +125,7 @@ export const CardsContent = [
         "link": "",
         "target": "_blank",
         "aboutBanner": "A Casa Amarela - Vincent van Gogh",
-        "color": "yellow-02"
+        "color": "yellow"       
     },
     {
         "id": 10,
@@ -129,10 +133,10 @@ export const CardsContent = [
         "icon": "IconEducational",
         "title": "Educativo",
         "about": "Acesse as principais pastas do educativo do MAC.",
-        "link": "",
+        "link": "green",
         "target": "_blank",
         "aboutBanner": "O Sepultamento de Cristo Pintura - Caravaggio",
-        "color": "green-01"
+        "color": "green"        
     },
     {
         "id": 11,
@@ -143,6 +147,6 @@ export const CardsContent = [
         "link": "",
         "target": "_blank",
         "aboutBanner": "O Nascimento de Vênus - Sandro Botticelli",
-        "color": "purple-01"
+        "color": "purple"        
     }
 ]

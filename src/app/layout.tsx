@@ -21,9 +21,10 @@ export default function RootLayout({
                 <body className="art:w:full art:flex art:overflow:hidden">
                     <NavMenu />
                     <div className="art:w:full art:flex art:flex:col art:align-items:center art:overflow:auto">
+                        {/* art:max-w:80  */}
                         <section className="art:w:full art:max-w:80 art:p:base art:flex art:flex:col art:gap:xl art:align-items:center">
                             <Header />
-                            <main >{children}</main>
+                            <main>{children}</main>
                             <NavMenuMobile/>
                         </section>
                     </div>

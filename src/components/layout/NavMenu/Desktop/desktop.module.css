@@ -10,6 +10,9 @@
     flex-direction: column;
     scrollbar-width: none;
     scrollbar-color: var(--white-01);
+
+    padding-right: 2rem;
+
 }
 
 .top {
@@ -23,13 +26,8 @@
 }
 
 .openMenu {
-    width: 16rem;
+    width: 18rem;
     /*     height: 100%;
     display: flex;
     align-items: center; */
-}
-
-.mobile {
-    width: 100dvw;
-    height: fit-content;
 }

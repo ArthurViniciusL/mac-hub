@@ -18,6 +18,7 @@ export interface NavMenuProps {
         icon: string,
         title: string,
         color: string,
+        artColor: string,
         link: string,
         target: string
     }[]
@@ -26,7 +27,7 @@ export interface NavMenuProps {
 export default function NavMenu() {
 
     const menus = CardsContent;
-    const [isOpen, setIsOpen] = useState<boolean>(true);
+    const [isOpen, setIsOpen] = useState<boolean>(false);
 
     const { isMobile } = useDeviceContext();
 
@@ -39,7 +40,7 @@ export default function NavMenu() {
         nav: "art:h:full art:flex art:justi align-items:center",
         ul: "art:flex art:flex:col art:gap:base",
         li: "art:border-b:solid art:border:thin art:border:white-03 art:hover:border:none",
-        btn: "art:w:full art:cursor:pointer art:p:sm art:flex art:flex:row art:align-items:center art:border-rd:base art:bg:none art:hover:bg:white-02 art:font:black-01 art:hover:font:black-01 art:font:capitalize art:font:semibold",
+        btn: "art:gap:sm art:w:full art:p:sm art:flex art:flex:row art:align-items:center art:bg:none art:hover:bg:white-02 art:font:black-01 art:hover:font:black-01 art:font:base art:font:capitalize",
     }
 
     return (
