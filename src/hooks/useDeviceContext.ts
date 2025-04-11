@@ -1,3 +1,5 @@
+"use client";
+
 import { DeviceContext } from "@/context/DeviceContext";
 import { useContext } from "react";
 

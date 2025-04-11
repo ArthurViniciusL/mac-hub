@@ -1,5 +1,4 @@
 
-
 import styles from "@/app/(home)/components/Card/Card.module.css"
 
 import Card from "./components/Card";
@@ -13,11 +12,12 @@ export default function Home() {
 
     return (
         <>
-            <Card>
-                {
-                    data.slice(1).map((card, index) => (
-                        <li key={index}
-                            className={`
+            <main>
+                <Card>
+                    {
+                        data.slice(1).map((card, index) => (
+                            <li key={index}
+                                className={`
                             ${styles.box}
                             art:flex
                             art:flex:col
@@ -28,16 +28,17 @@ export default function Home() {
                             art:border:white-03
                             art:hover:border:${card.color}-01
                         `}
-                        >
-                            <Banner path={card.banner}
-                                alt={card.title}
-                                about={card.aboutBanner}
-                            />
-                            <Content content={card} />
-                        </li>
-                    ))
-                }
-            </Card>
+                            >
+                                <Banner path={card.banner}
+                                    alt={card.title}
+                                    about={card.aboutBanner}
+                                />
+                                <Content content={card} />
+                            </li>
+                        ))
+                    }
+                </Card>
+            </main>
         </>
     );
 }

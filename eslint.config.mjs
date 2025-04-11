@@ -22,8 +22,8 @@ const eslintConfig = [
     rules: {
       'react/react-in-jsx-scope': 'off',
       'react/jsx-uses-react': 'off',
-      'react/jsx-max-props-per-line': [1, { maximum: 1, when: 'always' }],
-      
+      // 'react/jsx-max-props-per-line': [1, { maximum: 1, when: 'always' }],
+      "@typescript-eslint/no-explicit-any": "off",
       '@typescript-eslint/explicit-module-boundary-types': 'off',
       /* indent: ['error', 4], */
       quotes: ['error', 'double'],

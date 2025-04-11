@@ -27,7 +27,7 @@ export interface NavMenuProps {
 export default function NavMenu() {
 
     const menus = CardsContent;
-    const [isOpen, setIsOpen] = useState<boolean>(false);
+    const [isOpen, setIsOpen] = useState<boolean>(true);
 
     const { isMobile } = useDeviceContext();
 
@@ -68,7 +68,7 @@ export default function NavMenu() {
                                                         {
                                                             menus.map((menu, index) => (
                                                                 <li key={index} title={menu.title.toLocaleLowerCase()} className={art.li}>
-                                                                    <a href={menu.link} target={menu.target}>
+                                                                    <a href={menu.link || ""} target={menu.target}>
                                                                         <button className={art.btn}>
                                                                             <PageIcon name={menu.icon} color={menu.color} size={20} />
                                                                             {

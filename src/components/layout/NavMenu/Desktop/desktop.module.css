@@ -20,7 +20,7 @@
     height: 8rem;
     display: flex;
     gap: var(--base);
-    align-items: start;
+    align-items: flex-start;
     justify-content: space-between;
     /* background: var(--white-01); */
 }

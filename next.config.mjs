@@ -16,6 +16,14 @@ const nextConfig = {
     });
 
     config.module.rules.push({
+      test: /\.(mp3|wav|m4a)$/,
+      type: 'asset/resource',
+      generator: {
+        filename: 'static/media/[hash][ext][query]'
+      }
+    });
+
+    config.module.rules.push({
       test: /\.svg$/,
       use: ['@svgr/webpack'], // Usa o @svgr/webpack para transformar SVGs em componentes React
     });

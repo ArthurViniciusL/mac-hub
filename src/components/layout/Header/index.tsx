@@ -1,14 +1,14 @@
 "use client";
 import LogoMacHub from "@/components/Ui/Icons/LogoMacHub";
 import { useDeviceContext } from "@/hooks/useDeviceContext";
-import { useState } from "react";
+import { useHeaderContext } from "@/hooks/useHeaderContext";
 
 
 export default function Header() {
 
-    const [title] = useState<string>("Mural");
+    const { title } = useHeaderContext();
 
-    const {isMobile} = useDeviceContext();
+    const { isMobile } = useDeviceContext();
 
     const art = {
         header: "art:w:full art:flex art:gap:base art:flex:col art:justify-content:center art:align-items:center",
@@ -16,17 +16,17 @@ export default function Header() {
     }
 
     return (
-        <>            
+        <>
             <header className={art.header}>
                 {
                     isMobile ?
-                    (
-                        <LogoMacHub size={50}/>
-                    )
-                    :
-                    (
-                        <></>
-                    )
+                        (
+                            <LogoMacHub size={50} />
+                        )
+                        :
+                        (
+                            <></>
+                        )
                 }
                 <h1 className={art.h1}>
                     {title}

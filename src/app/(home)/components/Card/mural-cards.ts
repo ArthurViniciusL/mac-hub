@@ -43,7 +43,7 @@ export const CardsContent = [
         "icon": "IconEventsCalendar",
         "title": "Calendário de Eventos",
         "about": "Visualize o calendário interno do museu.",
-        "link": "",
+        "link": AppRoutes.underConstruction,
         "target": "_blank",
         "aboutBanner": "Caminho nos Campos de trigo em Pourville - Claude Monet",
         "color": "purple",
@@ -55,7 +55,7 @@ export const CardsContent = [
         "icon": "IconMainDocuments",
         "title": "Principais Documentos",
         "about": "Acesse a pasta com os principais documentos do MAC.",
-        "link": "",
+        "link": AppRoutes.underConstruction,
         "target": "_blank",
         "aboutBanner": "Marilyn Monroe portfolio - Andy Warhol",
         "color": "red",
@@ -80,7 +80,7 @@ export const CardsContent = [
         "about": "Acesse a pasta com todos os documentos do MAC.",
         "target": "_blank",
         "aboutBanner": "O beijo - Gustav Klimt",
-        "link": "",
+        "link": AppRoutes.underConstruction,
         "color": "orange"        
     },
     {
@@ -89,7 +89,7 @@ export const CardsContent = [
         "icon": "IconEventPlanning",
         "title": "Planejamento de eventos",
         "about": "Acesse os formulários criar um planejamento.",
-        "link": "",
+        "link": AppRoutes.underConstruction,
         "target": "_blank",
         "aboutBanner": "Mulher no Espelho - Pablo Picasso",
         "color": "green"
@@ -100,7 +100,7 @@ export const CardsContent = [
         "icon": "IconSpaceReservation",
         "title": "Reserva de espaços",
         "about": "Acesse o formulário para reservar espaços no MAC.",
-        "link": "",
+        "link": AppRoutes.underConstruction,
         "target": "_blank",
         "aboutBanner": "O Filho do Homem Pintura - René Magritte",
         "color": "blue"        
@@ -111,7 +111,7 @@ export const CardsContent = [
         "icon": "IconReportsAndMetrics",
         "title": "Relatórios e Métricas",
         "about": "Visualize os dashboards do MAC.",
-        "link": "",
+        "link": AppRoutes.underConstruction,
         "target": "_blank",
         "aboutBanner": "A Criação de Adão - Michelangelo Buonarroti",
         "color": "purple"        
@@ -122,7 +122,7 @@ export const CardsContent = [
         "icon": "IconMacGallery",
         "title": "Galeria Mac",
         "about": "Acesse a pasta de arquivos multimídia do MAC.",
-        "link": "",
+        "link": AppRoutes.underConstruction,
         "target": "_blank",
         "aboutBanner": "A Casa Amarela - Vincent van Gogh",
         "color": "yellow"       
@@ -144,7 +144,7 @@ export const CardsContent = [
         "icon": "IconTeam",
         "title": "Equipe",
         "about": "Visualize a lista de contatos da equipe do MAC.",
-        "link": "",
+        "link": AppRoutes.underConstruction,
         "target": "_blank",
         "aboutBanner": "O Nascimento de Vênus - Sandro Botticelli",
         "color": "purple"        
