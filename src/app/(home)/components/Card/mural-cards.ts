@@ -1,14 +1,15 @@
-import banner_01 from "@/assets/images/banners/Os Girassóis Pintura de Vincent - van Gogh.png";
+import banner_01 from "@/assets/images/banners/A Casa Amarela - Vincent van Gogh.png";
 import banner_02 from "@/assets/images/banners/Caminho nos Campos de trigo em Pourville - Claude Monet.png";
 import banner_03 from "@/assets/images/banners/Marilyn Monroe portfolio - Andy Warhol.png";
 import banner_04 from "@/assets/images/banners/The Scream - Edvard Munch.png";
 import banner_05 from "@/assets/images/banners/o beijo - gustav klimt.png";
 import banner_06 from "@/assets/images/banners/Mulher no Espelho - Pablo Picasso.png";
-import banner_07 from "@/assets/images/banners/O Filho do Homem Pintura - René Magritte.png";
-import banner_08 from "@/assets/images/banners/A Criação de Adão - Michelangelo Buonarroti.png";
+import banner_07 from "@/assets/images/banners/O Filho do Homem Pintura - Rene Magritte.png";
+import banner_08 from "@/assets/images/banners/A Criacao de Adao - Michelangelo Buonarroti.png";
 import banner_09 from "@/assets/images/banners/A Casa Amarela - Vincent van Gogh.png";
 import banner_10 from "@/assets/images/banners/O Sepultamento de Cristo Pintura - Caravaggio.png";
-import banner_11 from "@/assets/images/banners/O Nascimento de Vênus - Sandro Botticelli.png";
+import banner_11 from "@/assets/images/banners/O Nascimento de Venus - Sandro Botticelli.png";
+
 import AppRoutes from "@/app.routes";
 
 
@@ -23,7 +24,7 @@ export const CardsContent = [
         "target": "_self",
         "aboutBanner": "",
         "color": "black",
-       
+
     },
     {
         "id": 1,
@@ -35,7 +36,7 @@ export const CardsContent = [
         "target": "_blank",
         "aboutBanner": "Os Girassóis Pintura de Vincent - Van Gogh",
         "color": "yellow",
-        
+
     },
     {
         "id": 2,
@@ -47,7 +48,7 @@ export const CardsContent = [
         "target": "_blank",
         "aboutBanner": "Caminho nos Campos de trigo em Pourville - Claude Monet",
         "color": "purple",
-        
+
     },
     {
         "id": 3,
@@ -59,7 +60,7 @@ export const CardsContent = [
         "target": "_blank",
         "aboutBanner": "Marilyn Monroe portfolio - Andy Warhol",
         "color": "red",
-       
+
     },
     {
         "id": 4,
@@ -81,7 +82,7 @@ export const CardsContent = [
         "target": "_blank",
         "aboutBanner": "O beijo - Gustav Klimt",
         "link": AppRoutes.underConstruction,
-        "color": "orange"        
+        "color": "orange"
     },
     {
         "id": 6,
@@ -103,7 +104,7 @@ export const CardsContent = [
         "link": AppRoutes.underConstruction,
         "target": "_blank",
         "aboutBanner": "O Filho do Homem Pintura - René Magritte",
-        "color": "blue"        
+        "color": "blue"
     },
     {
         "id": 8,
@@ -114,7 +115,7 @@ export const CardsContent = [
         "link": AppRoutes.underConstruction,
         "target": "_blank",
         "aboutBanner": "A Criação de Adão - Michelangelo Buonarroti",
-        "color": "purple"        
+        "color": "purple"
     },
     {
         "id": 9,
@@ -125,7 +126,7 @@ export const CardsContent = [
         "link": AppRoutes.underConstruction,
         "target": "_blank",
         "aboutBanner": "A Casa Amarela - Vincent van Gogh",
-        "color": "yellow"       
+        "color": "yellow"
     },
     {
         "id": 10,
@@ -136,7 +137,7 @@ export const CardsContent = [
         "link": "green",
         "target": "_blank",
         "aboutBanner": "O Sepultamento de Cristo Pintura - Caravaggio",
-        "color": "green"        
+        "color": "green"
     },
     {
         "id": 11,
@@ -147,6 +148,6 @@ export const CardsContent = [
         "link": AppRoutes.underConstruction,
         "target": "_blank",
         "aboutBanner": "O Nascimento de Vênus - Sandro Botticelli",
-        "color": "purple"        
+        "color": "purple"
     }
 ]

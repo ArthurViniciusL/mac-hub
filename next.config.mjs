@@ -23,10 +23,10 @@ const nextConfig = {
       }
     });
 
-    config.module.rules.push({
-      test: /\.svg$/,
-      use: ['@svgr/webpack'], // Usa o @svgr/webpack para transformar SVGs em componentes React
-    });
+   // config.module.rules.push({
+   //   test: /\.svg$/,
+   //   use: ['@svgr/webpack'], // Usa o @svgr/webpack para transformar SVGs em componentes React
+  //  });
 
     return config;
   },
