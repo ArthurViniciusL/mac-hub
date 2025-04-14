@@ -10,12 +10,12 @@ export default function LogoMac() {
     return (
         <>
             <a href="https://museumaccg.org.br/" target="_blank" >
-                <div className=" art:flex art:gap:sm art:flex:row art:align-items:center">
+                <div className=" art:flex art:gap:sm art:row art:align-items:center">
                     <Image src={logoMac}
                         alt="logomarca do mac"
                         width={50}
                     />
-                    <div className="art:flex art:flex:col art:font:sm art:font:semibold art:font:black-02">
+                    <div className="art:flex art:col art:font:sm art:font:semibold art:font:black-02">
                         <p>
                             MUSEU DE ARTE
                         </p>

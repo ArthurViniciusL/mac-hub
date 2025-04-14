@@ -11,7 +11,7 @@ export default function Header() {
     const { isMobile } = useDeviceContext();
 
     const art = {
-        header: "art:w:full art:flex art:gap:base art:flex:col art:justify-content:center art:align-items:center",
+        header: "art:w:full art:flex art:gap:base art:col art:justify-content:center art:align-items:center",
         h1: "art:w:full art:max-w:30 art:border:solid art:border:white-03 art:border:thin art:border-rd:base art:p:sm art:flex art:align-items:center art:justify-content:center art:font:black-02 art:font:base art:font:semibold"
     }
 

@@ -20,7 +20,7 @@ export default function Home() {
                                 className={`
                             ${styles.box}
                             art:flex
-                            art:flex:col
+                            art:col
                             art:font:black-02
                             art:bg:white-01
                             art:border-rd:lg

@@ -22,7 +22,7 @@ export default function Build() {
 
     return (
         <>
-            <main className="art:flex art:flex:col art:align-items:center art:gap:lg">
+            <main className="art:flex art:col art:align-items:center art:gap:lg">
                 <Image className={`${css.img} art:border-rd:lg`} priority={true} src={bee} alt="" />
                 <h1 className="art:font:black-04">
                     Ainda em construção...

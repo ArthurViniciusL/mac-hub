@@ -24,30 +24,9 @@ main {
   max-width: 80rem;
 }
 
-button {
-  cursor: pointer;
-}
 
 li {
   list-style: none;
-}
-
-a {
-  cursor: pointer;
-  text-decoration: none;
-  color: var(--black-01);
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-.desktop {
-  display: felx;
-}
-
-.mobile {
-  display: none;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -57,70 +36,4 @@ a:hover {
 
 .art\:log\:red {
   border: solid red 0.5px;
-}
-
-.art\:border\:thin {
-  border-width: 0.1rem;
-}
-
-.art\:font\:semibold {
-  font-weight: 600;
-}
-
-.art\:max-w\:30 {
-  max-width: 30rem;
-}
-
-.art\:max-w\:80 {
-  max-width: 80rem;
-}
-
-.art\:overflow\:hidden {
-  /* art:overflow:hidden */
-  overflow: hidden;
-}
-
-.art\:overflow\:auto {
-  /* art:overflow:auto */
-  overflow: auto;
-}
-
-.art\:fixed {
-  position: fixed;
-}
-
-.art\:absolute {
-  position: absolute;
-}
-
-
-.art\:font\:capitalize {
-  text-transform: capitalize;
-}
-
-.art\:h\:03 {
-  height: 3rem;
-}
-
-.art\:min-h\:08 {
-  min-height: 8rem;
-}
-
-.art\:hover\:shadow\:20\%:hover {
-/*   -webkit-box-shadow: 0px 0px 40px -3px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 0px 40px -3px rgba(0, 0, 0, 0.75); */
-  box-shadow: 0px 0px 40px -3px rgba(var(--black-rgb), 0.20);
-}
-
-.art\:top\:0 {
-  top: 0;
-}
-
-.myBtn {
-  border: solid red;
-  transition: border-color 0.3s ease;
-}
-
-.myBtn:hover {
-  border: solid blue;
 }

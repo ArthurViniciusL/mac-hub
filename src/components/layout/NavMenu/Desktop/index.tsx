@@ -38,9 +38,10 @@ export default function NavMenu() {
     const art = {
         aside: "art:p:sm art:gap:2xl",
         nav: "art:h:full art:flex art:justi align-items:center",
-        ul: "art:flex art:flex:col art:gap:base",
+        ul: "art:flex art:col art:gap:base",
         li: "art:border-b:solid art:border:thin art:border:white-03 art:hover:border:none",
-        btn: "art:gap:sm art:w:full art:p:sm art:flex art:flex:row art:align-items:center art:bg:none art:hover:bg:white-02 art:font:black-01 art:hover:font:black-01 art:font:base art:font:capitalize",
+        btn: "",
+        /* art:gap:sm art:w:full art:p:sm art:flex art:row art:align-items:center art:bg:none art:hover:bg:white-02 art:font:black-01 art:hover:font:black-01 art:font:base art:font:capitalize */
     }
 
     return (

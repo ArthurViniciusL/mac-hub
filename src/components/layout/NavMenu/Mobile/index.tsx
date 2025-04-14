@@ -20,7 +20,7 @@ export default function NavMenuMobile() {
         container: "art:w:full art:max-w:30 art:h:03",
         box: "art:w:full art:h:03 art:fixed art:m-b:2xl",
         nav: "art:full art:flex art:align-items:center art:justify-content:center art:p:sm",
-        content: "art:w:full art:max-w:30 art:bg:white-01 art:border:solid art:border:white-03 art:border:thin art:border-rd:lg art:p:base art:flex art:align-items:center art:justify-content:space-between",
+        content: "art:w:full art:max-w:30 art:bg:white-01 art:border:solid art:border:white-03 art:border:thin art:border-rd:lg art:p:base art:flex art:align-items:center art:justify-content:between",
     }
 
     const menus = CardsContent;
@@ -44,9 +44,9 @@ export default function NavMenuMobile() {
                                 isOpen ?
                                     (
                                         <>
-                                            <div className="art:w:device art:h:device art:fixed art:top:0 art:bg:white-02 art:p:base art:flex art:flex:col art:gap:base">
-                                                <div className="art:flex art:justify-content:space-between">
-                                                    <div className="art:flex art:flex:row art:gap:sm ">
+                                            <div className="art:w:device art:h:device art:fixed art:top:0 art:bg:white-02 art:p:base art:flex art:col art:gap:base">
+                                                <div className="art:flex art:justify-content:between">
+                                                    <div className="art:flex art:row art:gap:sm ">
                                                         <LogoMacHub size={50} />
                                                         <h1 className="art:font:base art:font:medium art:m-t:sm">Mac Hub</h1>
                                                     </div>
@@ -55,14 +55,14 @@ export default function NavMenuMobile() {
                                                     </button>
                                                 </div>
 
-                                                <nav className="art:h:full art:overflow:auto art:flex art:flex:col art:justify-content:start art:align-items:center">
-                                                    <ul className="art:flex art:flex:col art:gap:base">
+                                                <nav className="art:h:full art:overflow:auto art:flex art:col art:justify-content:start art:align-items:center">
+                                                    <ul className="art:flex art:col art:gap:base">
                                                         {
                                                             menus.map((menu, index) => (
                                                                 <li key={index} className="art:border-b:solid art:border:thin art:border:white-03 art:p:sm">
                                                                     {/* Transformar isso em um componente reutilizavel para ambos os paineis */}
                                                                     <a href={menu.link}>
-                                                                        <button className="art:font:capitalize art:font:base art:flex art:flex:row art:gap:sm art:align-items:center art:font:black-01 art:hover:bg:none art:hover:font:white-01">
+                                                                        <button className="art:font:capitalize art:font:base art:flex art:row art:gap:sm art:align-items:center art:font:black-01 art:hover:bg:none art:hover:font:white-01">
                                                                             <PageIcon name={menu.icon} size={15} color={menu.color} />
                                                                             {menu.title}
                                                                         </button>
