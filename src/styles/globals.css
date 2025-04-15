@@ -21,7 +21,7 @@ html {
 
 main {
   width: 100%;
-  max-width: 80rem;
+  max-width: 90rem;
 }
 
 
@@ -36,4 +36,8 @@ li {
 
 .art\:log\:red {
   border: solid red 0.5px;
+}
+
+.art\:cursor\:help {
+  cursor: help;
 }

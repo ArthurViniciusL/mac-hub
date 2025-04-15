@@ -1,43 +1,36 @@
-
-import styles from "@/app/(home)/components/Card/Card.module.css"
-
-import Card from "./components/Card";
-import { CardsContent } from "./components/Card/mural-cards";
-import Banner from "./components/Card/Banner";
-import Content from "./components/Card/Content";
+import { PagesContent } from "@/utils/PagesContent";
+import RenderCard from "./components/Card";
+import Card from "./components/Card/CardContent";
+import Banner from "./components/Card/CardContent/CardBanner";
+import CardHeader from "./components/Card/CardContent/CardHeader";
+import PageIcon from "@/components/Ui/Icons/PageIcon";
+import CardTitle from "./components/Card/CardContent/CardHeader/CardTitle/index.tsx";
+import CardDescription from "./components/Card/CardContent/CardDescription";
 
 export default function Home() {
 
-    const data = CardsContent;
+    const data = PagesContent;
+
 
     return (
         <>
-            <main>
-                <Card>
+            <main className="art:w:fit">
+                <RenderCard>
                     {
                         data.slice(1).map((card, index) => (
-                            <li key={index}
-                                className={`
-                            ${styles.box}
-                            art:flex
-                            art:col
-                            art:font:black-02
-                            art:bg:white-01
-                            art:border-rd:lg
-                            art:border:solid
-                            art:border:white-03
-                            art:hover:border:${card.color}-01
-                        `}
-                            >
-                                <Banner path={card.banner}
-                                    alt={card.title}
-                                    about={card.aboutBanner}
-                                />
-                                <Content content={card} />
-                            </li>
+                            <Card key={index} color={card.color}>
+                                <Banner src={card.banner} about={card.aboutBanner} alt={card.title} />
+                                <a href={card.link} target={card.target} className={`art:p-l:base art:p-r:base art:flex art:col art:gap:sm art:hover:font:${card.color}-01 art:ease:quick`}>
+                                    <CardHeader>
+                                        <PageIcon name={card.icon} color={card.color} size={18} />
+                                        <CardTitle text={card.title} />
+                                    </CardHeader>
+                                    <CardDescription text={card.about} />
+                                </a>
+                            </Card>
                         ))
                     }
-                </Card>
+                </RenderCard>
             </main>
         </>
     );

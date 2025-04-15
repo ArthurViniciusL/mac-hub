@@ -4,7 +4,6 @@ import Header from "@/components/layout/Header";
 import NavMenu from "@/components/layout/NavMenu/Desktop";
 import { AppProvider } from "@/context/AppProvider";
 import NavMenuMobile from "@/components/layout/NavMenu/Mobile";
-import BugReport from "@/components/BugReport";
 
 export const metadata: Metadata = {
     title: "MAC HUB",
@@ -19,16 +18,17 @@ export default function RootLayout({
     return (
         <AppProvider>
             <html lang="pt-br" className="art:w:device art:h:device art:bg:white-01 art:font:black-01">
-                <body className="art:w:full art:flex art:overflow:hidden">
+                <body className="art:w:full art:flex gap:base art:overflow:hidden">
                     <NavMenu />
-                    <BugReport />
-                    <div className="art:w:full art:flex art:col art:align-items:center art:overflow:auto">
-                        {/* art:max-w:80  */}
-                        <section className="art:w:full art:max-w:80 art:p:base art:flex art:col art:gap:xl art:align-items:center">
+                    <div className="
+                     art:w:full art:flex art:col art:gap:lg art:align-items:center art:overflow:auto art:p:base
+                     ">
                             <Header />
                             {children}
                             <NavMenuMobile />
-                        </section>
+                        {/* art:max-w:80  */}
+                       {/*  <section className="art:w:full art:max-w:80 art:p:base art:flex art:col art:gap:xl art:align-items:center">
+                        </section> */}
                     </div>
                 </body>
             </html>

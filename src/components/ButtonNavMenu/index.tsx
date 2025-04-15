@@ -8,7 +8,7 @@ interface ButtonNavMenuProps {
 
 export default function ButtonNavMenu({ state, setState }: ButtonNavMenuProps) {
     
-    const btnPainel = "art:bg:white-01 art:font:black-01 art:p:sm art:border-rd:base art:flex"
+    const btnPainel = "art:bg:white-01 art:hover:bg:black-01 art:font:black-01 art:hover:font:white-01 art:p:sm art:border-rd:base art:flex"
 
     return (
         <>

@@ -1,15 +1,17 @@
-import styles from "@/app/(home)/components/Card/Card.module.css";
+import css from "./Card.module.css";
 
-interface CardProps {
-    children: React.ReactNode;
+import { ReactNode } from "react";
+
+interface RenderCardProps {
+    children: ReactNode;
 }
 
-export default function Card({ children }: CardProps) {
+export default function RenderCard({ children }: RenderCardProps) {
     return (
         <>
-            <ul className={styles.container}>
+            <ul className={css.renderCard}>
                 {children}
             </ul>
         </>
-    );
+    )
 }

@@ -1,10 +1,10 @@
 "use client";
 
 import { IconCloseMobileMenu, IconOpenMobileMenu } from "@/app.modules";
-import { CardsContent } from "@/app/(home)/components/Card/mural-cards";
 import LogoMacHub from "@/components/Ui/Icons/LogoMacHub";
 import PageIcon from "@/components/Ui/Icons/PageIcon";
 import { useDeviceContext } from "@/hooks/useDeviceContext";
+import { PagesContent } from "@/utils/PagesContent";
 import { useState } from "react";
 
 export default function NavMenuMobile() {
@@ -23,7 +23,7 @@ export default function NavMenuMobile() {
         content: "art:w:full art:max-w:30 art:bg:white-01 art:border:solid art:border:white-03 art:border:thin art:border-rd:lg art:p:base art:flex art:align-items:center art:justify-content:between",
     }
 
-    const menus = CardsContent;
+    const menus = PagesContent;
 
     /**
      * TODO

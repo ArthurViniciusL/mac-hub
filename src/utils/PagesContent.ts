@@ -13,7 +13,7 @@ import banner_11 from "@/assets/images/banners/O Nascimento de Venus - Sandro Bo
 import AppRoutes from "@/app.routes";
 
 
-export const CardsContent = [
+export const PagesContent = [
     {
         "id": 0,
         "banner": "",

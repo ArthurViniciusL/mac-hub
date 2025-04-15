@@ -1,21 +1,23 @@
+import css from "../../Card.module.css";
+
 import { IconImageNotFount } from "@/app.modules";
-import styles from "@/app/(home)/components/Card/Card.module.css";
 import Image from "next/image";
 
 interface BannerProps {
-    path: any;
-    alt: string;
+    src: any;
+    //src: string;
     about: string;
+    alt: string;
 }
 
-export default function Banner({ path, alt, about }: BannerProps) {
+export default function Banner({ src, about, alt }: BannerProps) {
     return (
         <>
-            <div title={about} className={styles.containerBanner}>
+            <div title={about} className={`${css.cardBanner} art:ease:slow`} >
                 {
-                    !path ?
+                    !src ?
                         (
-                            <div className=" art:w:full art:h:full art:bg:white-02 art:flex art:justify-content:center art:align-items:center"
+                            <div className="art:w:full art:h:full art:bg:white-02 art:flex art:justify-content:center art:align-items:center"
                             >
                                 <IconImageNotFount />
                             </div>
@@ -24,7 +26,7 @@ export default function Banner({ path, alt, about }: BannerProps) {
                         (
                             <Image
                                 className="art:w:fit"
-                                src={path}
+                                src={src}
                                 alt={`banner de ${alt}`}
                                 height={300}
                             />
@@ -32,5 +34,5 @@ export default function Banner({ path, alt, about }: BannerProps) {
                 }
             </div>
         </>
-    );
+    )
 }

@@ -1,15 +1,15 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import styles from "./desktop.module.css";
 
-import { CardsContent } from "@/app/(home)/components/Card/mural-cards";
 
 import LogoMacHub from "@/components/Ui/Icons/LogoMacHub";
 import ButtonNavMenu from "@/components/ButtonNavMenu";
 import PageIcon from "@/components//Ui/Icons/PageIcon";
 import { useDeviceContext } from "@/hooks/useDeviceContext";
+import { PagesContent } from "@/utils/PagesContent";
 
 export interface NavMenuProps {
     state: boolean,
@@ -26,7 +26,7 @@ export interface NavMenuProps {
 
 export default function NavMenu() {
 
-    const menus = CardsContent;
+    const menus = PagesContent;
     const [isOpen, setIsOpen] = useState<boolean>(true);
 
     const { isMobile } = useDeviceContext();
@@ -40,8 +40,7 @@ export default function NavMenu() {
         nav: "art:h:full art:flex art:justi align-items:center",
         ul: "art:flex art:col art:gap:base",
         li: "art:border-b:solid art:border:thin art:border:white-03 art:hover:border:none",
-        btn: "",
-        /* art:gap:sm art:w:full art:p:sm art:flex art:row art:align-items:center art:bg:none art:hover:bg:white-02 art:font:black-01 art:hover:font:black-01 art:font:base art:font:capitalize */
+        btn: "art:w:full art:gap:sm art:p:sm art:flex art:row art:align-items:center art:bg:none art:hover:bg:white-02 art:font:black-01 art:font:capitalize art:font:semibold art:border-rd:base  art:ease:quick"
     }
 
     return (
