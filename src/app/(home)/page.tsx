@@ -1,3 +1,5 @@
+
+
 import { PagesContent } from "@/utils/PagesContent";
 import RenderCard from "./components/Card";
 import Card from "./components/Card/CardContent";
@@ -18,7 +20,7 @@ export default function Home() {
                 <RenderCard>
                     {
                         data.slice(1).map((card, index) => (
-                            <Card key={index} color={card.color}>
+                            <Card key={index}>
                                 <Banner src={card.banner} about={card.aboutBanner} alt={card.title} />
                                 <a href={card.link} target={card.target} className={`art:p-l:base art:p-r:base art:flex art:col art:gap:sm art:hover:font:${card.color}-01 art:ease:quick`}>
                                     <CardHeader>

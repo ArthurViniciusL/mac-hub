@@ -38,6 +38,14 @@ li {
   border: solid red 0.5px;
 }
 
+.art\:h\:50\% {
+  height: 50%;
+}
+
+.art\:cursor\:default {
+  cursor: default;
+}
+
 .art\:cursor\:help {
   cursor: help;
 }

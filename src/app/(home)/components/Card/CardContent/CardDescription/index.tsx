@@ -1,12 +1,10 @@
-import { ExternalLink } from "lucide-react";
-
 interface CardDescriptionProps {
     text: string;
 }
 
 export default function CardDescription({ text }: CardDescriptionProps) {
     const art = {
-        title: "art:flex art:col art:gap:sm"
+        title: "art:flex art:col art:gap:sm art:font:black-04"
     }
 
     return (

@@ -1,31 +1,34 @@
-import css from "../../Card.module.css";
-
 import { IconImageNotFount } from "@/app.modules";
 import Image from "next/image";
 
 interface BannerProps {
     src: any;
-    //src: string;
     about: string;
     alt: string;
 }
 
 export default function Banner({ src, about, alt }: BannerProps) {
+    
+    const art = {
+         container: "art:w:full art:h:50% art:ease:slow art:flex art:align-items:start art:justify-content:center art:overflow:hidden cursor:default",
+        imgNoFount: "art:w:full art:h:full art:bg:white-02 art:flex art:justify-content:center art:align-items:center",
+        banner: "art:w:fit"
+    }
+
     return (
         <>
-            <div title={about} className={`${css.cardBanner} art:ease:slow`} >
+            <div title={about} className={art.container}>
                 {
                     !src ?
                         (
-                            <div className="art:w:full art:h:full art:bg:white-02 art:flex art:justify-content:center art:align-items:center"
-                            >
+                            <div className={art.imgNoFount}>
                                 <IconImageNotFount />
                             </div>
                         )
                         :
                         (
                             <Image
-                                className="art:w:fit"
+                                className={art.banner}
                                 src={src}
                                 alt={`banner de ${alt}`}
                                 height={300}

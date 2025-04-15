@@ -1,4 +1,4 @@
-import banner_01 from "@/assets/images/banners/A Casa Amarela - Vincent van Gogh.png";
+import banner_01 from "@/assets/images/banners/Os Girassois - Vincent Van Gogh.png";
 import banner_02 from "@/assets/images/banners/Caminho nos Campos de trigo em Pourville - Claude Monet.png";
 import banner_03 from "@/assets/images/banners/Marilyn Monroe portfolio - Andy Warhol.png";
 import banner_04 from "@/assets/images/banners/The Scream - Edvard Munch.png";
@@ -34,7 +34,7 @@ export const PagesContent = [
         "about": "Visualize o mural com os avisos mais recentes",
         "link": AppRoutes.warnings,
         "target": "_blank",
-        "aboutBanner": "Os Girassóis Pintura de Vincent - Van Gogh",
+        "aboutBanner": "Os Girassóis - Vincent Van Gogh",
         "color": "yellow",
 
     },
