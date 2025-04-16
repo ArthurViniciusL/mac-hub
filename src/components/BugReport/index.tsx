@@ -8,7 +8,7 @@ export default function BugReport() {
     const { isMobile } = useDeviceContext();
 
     const art = {
-        container: "art:absolute art:p:base art:m:base art:bg:yellow:10% art:hover:bg:yellow:20%  art:border-rd:lg art:border:thin art:border:none art:hover:border:yellow-01 art:border:white-01 art:border:solid ",
+        container: "art:p:base art:m:base art:bg:yellow:10% art:hover:bg:yellow:20%  art:border-rd:lg art:border:thin art:border:none art:hover:border:yellow-01 art:border:white-01 art:border:solid ",
         content: "art:font:yellow-01 art:font:semibold art:font:base art:flex art:row art:gap:base ",
     }
 

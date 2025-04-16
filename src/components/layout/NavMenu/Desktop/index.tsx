@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 import styles from "./desktop.module.css";
 
@@ -8,28 +8,20 @@ import styles from "./desktop.module.css";
 import LogoMacHub from "@/components/Ui/Icons/LogoMacHub";
 import ButtonNavMenu from "@/components/ButtonNavMenu";
 import PageIcon from "@/components//Ui/Icons/PageIcon";
-import { useDeviceContext } from "@/hooks/useDeviceContext";
 import { PagesContent } from "@/utils/PagesContent";
+import BtnMenu from "@/components/Ui/Buttons/BtnMenu";
+import { IPagesContent } from "@/types/IPagesContent";
 
 export interface NavMenuProps {
     state: boolean,
     setState: (state: boolean) => void,
-    menus: {
-        icon: string,
-        title: string,
-        color: string,
-        artColor: string,
-        link: string,
-        target: string
-    }[]
+    menus: IPagesContent[]
 }
 
-export default function NavMenu() {
+export default function DesktopMenu() {
 
     const menus = PagesContent;
     const [isOpen, setIsOpen] = useState<boolean>(true);
-
-    const { isMobile } = useDeviceContext();
 
     function handleIsOpen() {
         setIsOpen(!isOpen)
@@ -37,84 +29,58 @@ export default function NavMenu() {
 
     const art = {
         aside: "art:p:sm art:gap:2xl",
-        nav: "art:h:full art:flex art:justi align-items:center",
+        nav: "art:h:full art:flex art:justify-content:start art:align-items:start",
         ul: "art:flex art:col art:gap:base",
-        li: "art:border-b:solid art:border:thin art:border:white-03 art:hover:border:none",
-        btn: "art:w:full art:gap:sm art:p:sm art:flex art:row art:align-items:center art:bg:none art:hover:bg:white-02 art:font:black-01 art:font:capitalize art:font:semibold art:border-rd:base  art:ease:quick"
+        li: "art:border-b:solid art:border:thin art:border:white-02 art:hover:border:none",
+        btnIcon: "art:p:sm art:bg:none art:hover:bg:white-02 art:border-rd:base art:ease:quick"
     }
 
     return (
         <>
-            {
-                isMobile ?
-                    (
-                        <>
-                        </>
-                    )
-                    :
-                    (
-                        <>
-                            <aside className={`${styles.container} ${art.aside}`}>
-                                <div className={`${styles.top}`}>
-                                    <LogoMacHub size={90} />
-                                    <ButtonNavMenu state={isOpen} setState={handleIsOpen} />
-                                </div>
-                                {
-                                    isOpen ?
-                                        (
-                                            <>
-                                                <nav id="openMenu" className={`${art.nav} ${styles.openMenu}`}>
-                                                    <ul className={art.ul}>
-                                                        {
-                                                            menus.map((menu, index) => (
-                                                                <li key={index} title={menu.title.toLocaleLowerCase()} className={art.li}>
-                                                                    <a href={menu.link || ""} target={menu.target}>
-                                                                        <button className={art.btn}>
-                                                                            <PageIcon name={menu.icon} color={menu.color} size={20} />
-                                                                            {
-                                                                                menu.title.length >= 18 ?
-                                                                                    (
-                                                                                        menu.title.slice(0, 18) + "..."
-                                                                                    )
-                                                                                    :
-                                                                                    (
-                                                                                        menu.title
-                                                                                    )
-                                                                            }
-                                                                        </button>
-                                                                    </a>
-                                                                </li>
-                                                            ))
-                                                        }
-                                                    </ul>
-                                                </nav >
-                                            </>
-                                        )
-                                        :
-                                        (
-                                            <>
-                                                <nav id="closeMenu" className={`${art.nav} art:w:full`}>
-                                                    <ul className={art.ul}>
-                                                        {
-                                                            menus.map((menu, index) => (
-                                                                <li key={index} title={menu.title.toLocaleLowerCase()} className={art.li}>
-                                                                    <a href={menu.link} target="_blank">
-                                                                        <button className={art.btn}>
-                                                                            <PageIcon name={menu.icon} color={menu.color} size={20} />
-                                                                        </button>
-                                                                    </a>
-                                                                </li>
-                                                            ))
-                                                        }
-                                                    </ul>
-                                                </nav >
-                                            </>
-                                        )
-                                }
-                            </aside >
-                        </>
-                    )
-            }
+            <aside className={`${styles.container} ${art.aside}`}>
+                <div className={`${styles.top}`}>
+                    <LogoMacHub size={90} />
+                    <ButtonNavMenu state={isOpen} setState={handleIsOpen} />
+                </div>
+                {
+                    isOpen ?
+                        (
+                            <>
+                                <nav id="openMenu" className={`${art.nav} ${styles.openMenu}`}>
+                                    <ul className={art.ul}>
+                                        {
+                                            menus.map((menu, index) => (
+                                                <li key={index} title={menu.title.toLocaleLowerCase()} className={art.li}>
+                                                    <BtnMenu href={menu.link} label={menu.title} slice={true} size={15} icon={menu.icon} color={menu.color} />
+                                                </li>
+                                            ))
+                                        }
+                                    </ul>
+                                </nav >
+                            </>
+                        )
+                        :
+                        (
+                            <>
+                                <nav id="closeMenu" className={`${art.nav} art:w:full`}>
+                                    <ul className={art.ul}>
+                                        {
+                                            menus.map((menu, index) => (
+                                                <li key={index} title={menu.title.toLocaleLowerCase()} >
+                                                    <a href={menu.link} target="_blank">
+                                                        <button className={art.btnIcon}>
+                                                            <PageIcon name={menu.icon} color={menu.color} size={20} />
+                                                        </button>
+                                                    </a>
+                                                </li>
+                                            ))
+                                        }
+                                    </ul>
+                                </nav >
+                            </>
+                        )
+                }
+            </aside >
         </>
     );
 }
