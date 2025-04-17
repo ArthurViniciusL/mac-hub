@@ -1,10 +1,15 @@
 export class LocalStorage {
+    
+    constructor() {
+
+    }
+
     /**
      * Salva o valor booleano `panel_mode` no localStorage.
      * @param {boolean} value - Valor a ser salvo (true/false).
      * @returns {boolean} - `true` se salvou com sucesso, `false` se falhou.
      */
-    static setPanelMode(value:boolean) {
+    setPanelMode(value:boolean) {
         try {
             if (typeof value !== 'boolean') {
                 throw new Error('O valor deve ser booleano (true/false).');
@@ -22,7 +27,7 @@ export class LocalStorage {
      * @param {boolean} [defaultValue=false] - Valor padrão se a chave não existir.
      * @returns {boolean} - Valor armazenado ou `defaultValue` em caso de erro.
      */
-    static getPanelMode(defaultValue = false) {
+    getPanelMode(defaultValue = false) {
         try {
             const storedValue = localStorage.getItem('panel_mode');
             // Converte string para booleano
@@ -39,7 +44,8 @@ export class LocalStorage {
      * Remove a chave `panel_mode` do localStorage.
      * @returns {boolean} - `true` se removeu com sucesso.
      */
-    static removePanelMode() {
+    
+    /* static */ removePanelMode() {
         try {
             localStorage.removeItem('panel_mode');
             return true;

@@ -16,21 +16,22 @@ export default function DesktopMenu({ content }: NavMenuProps) {
 
     const [isOpen, setIsOpen] = useState<boolean>(true);
 
+    const storage = new LocalStorage();
+
     function handleIsOpen() {
+        storage.setPanelMode(!isOpen);
         setIsOpen(!isOpen);
-        LocalStorage.setPanelMode(!isOpen)
     }
 
     useEffect(() => {
-        const storage = LocalStorage.getPanelMode();
-
-        console.log(storage)
-
+        
         if (!storage) {
-            setIsOpen(storage);
+            setIsOpen(true);
+        } else {
+            setIsOpen(storage.getPanelMode);
         }
 
-    }, [isOpen]);
+    },[]);
 
 
     const art = {
