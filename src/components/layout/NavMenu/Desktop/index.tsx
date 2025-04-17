@@ -47,10 +47,10 @@ export default function DesktopMenu({ content }: NavMenuProps) {
             <aside className={`${css.container} ${art.aside}`}>
                 <div className={art.top} style={{ "height": "8rem" }}>
                     <div className="art:flex art:row art:gap:sm">
-                        <LogoMacHub size={90} />
+                        <LogoMacHub size={80} />
                         {
                             isOpen ? (
-                                <h2 className="art:font:base art:p-t:base">Mac HUB</h2>
+                                <h2 className="art:font:base art:p-t:base art:font:semibold">Mac HUB</h2>
 
                             ) :
                                 (

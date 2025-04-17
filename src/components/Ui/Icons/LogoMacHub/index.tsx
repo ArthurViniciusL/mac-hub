@@ -6,6 +6,7 @@ import light from "@/assets/icons/app-logo/mac_hub_light.svg";
 import dark from "@/assets/icons/app-logo/mac_hub_dark.svg";
 
 import { useEffect, useState } from "react";
+import AppRoutes from "@/app.routes";
 
 interface LogoMacHubProps {
     size: number;
@@ -38,32 +39,34 @@ export default function LogoMacHub({ size }: LogoMacHubProps) {
 
     return (
         <>
+            <a href={AppRoutes.home}>
+                {
+                    isDark ?
+                        (
+                            <>
+                                <Image className=""
+                                    src={light}
+                                    alt="logo do mac hub."
+                                    height={size}
+                                    priority={true}
+                                />
 
-            {
-                isDark ?
-                    (
-                        <>
-                            <Image className=""
-                                src={light}
-                                alt="logo do mac hub."
-                                height={size}
-                                priority={true}
-                            />
-                        </>
-                    )
-                    :
-                    (
-                        <>
-                            <Image className=""
-                                src={dark}
-                                alt="logo do mac hub."
-                                height={size}
-                                priority={true}
-                            />
-                        </>
-                    )
+                            </>
+                        )
+                        :
+                        (
+                            <>
+                                <Image className=""
+                                    src={dark}
+                                    alt="logo do mac hub."
+                                    height={size}
+                                    priority={true}
+                                />
+                            </>
+                        )
 
-            }
+                }
+            </a>
         </>
     );
 }
