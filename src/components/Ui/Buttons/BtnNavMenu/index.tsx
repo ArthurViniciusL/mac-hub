@@ -1,14 +1,9 @@
 import { IconCloseMenu, IconOpenMenu } from "@/app.modules";
+import { IButton } from "@/types/IButton";
 
-
-interface ButtonNavMenuProps {
-    state: boolean;
-    setState: () => void;
-}
-
-export default function ButtonNavMenu({ state, setState }: ButtonNavMenuProps) {
+export default function BtnNavMenu({ state, setState }: IButton) {
     
-    const btnPainel = "art:bg:white-01 art:hover:bg:black-01 art:font:black-01 art:hover:font:white-01 art:p:sm art:border-rd:base art:flex"
+    const btnPainel = "art:bg:white-01 art:hover:bg:black-01 art:ease-in:instant art:font:black-01 art:hover:font:white-01 art:p:sm art:border-rd:base art:flex"
 
     return (
         <>

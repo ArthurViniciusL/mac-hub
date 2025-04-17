@@ -1,6 +1,6 @@
 import { IconCloseMobileMenu } from "@/app.modules";
 import BugReport from "@/components/BugReport";
-import BtnMenu from "@/components/Ui/Buttons/BtnMenu";
+import BtnPageMenu from "@/components/Ui/Buttons/BtnPageMenu";
 import LogoMacHub from "@/components/Ui/Icons/LogoMacHub";
 import { NavMenuProps } from "..";
 
@@ -31,7 +31,7 @@ export default function OpenMenu({ content, setPainelState }: NavMenuProps) {
                         {
                             content.map((menu, index) => (
                                 <li key={index} className="art:p:sm">
-                                    <BtnMenu href={menu.link} label={menu.title} size={15} icon={menu.icon} color={menu.color} />
+                                    <BtnPageMenu href={menu.link} label={menu.title} iconSize={15} iconName={menu.icon} iconColor={menu.color} />
                                 </li>
                             ))
                         }
