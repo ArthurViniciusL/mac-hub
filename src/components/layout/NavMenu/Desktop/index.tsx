@@ -37,8 +37,8 @@ export default function DesktopMenu({ content }: NavMenuProps) {
     const art = {
         top: "art:w:full art:flex art:gap:base art:align-items:start art:justify-content:between",
         aside: "art:p:sm art:gap:2xl",
-        nav: "art:h:full art:flex art:justify-content:start art:align-items:start",
-        ul: "art:flex art:col art:gap:base",
+        nav: "art:overflow:auto art:h:full art:flex art:justify-content:start art:align-items:start",
+        ul: "art:h:full art:flex art:col art:gap:base",
         li: "art:border-b:solid art:border:thin art:border:white-02 art:hover:border:none",
         btn_icon: "art:p:sm art:bg:none art:hover:bg:white-02 art:border-rd:base art:ease:quick"
     }
