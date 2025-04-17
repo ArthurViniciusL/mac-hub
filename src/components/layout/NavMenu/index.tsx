@@ -4,7 +4,7 @@ import { useDeviceContext } from "@/hooks/useDeviceContext"
 import DesktopMenu from "./Desktop";
 import MobileMenu from "./Mobile";
 import { IPagesContent } from "@/types/IPagesContent";
-import { PagesContent } from "@/utils/PagesContent";
+import { PagesContent } from "@/utils/Objects/PagesContent";
 
 export interface NavMenuProps {
     art?: any;

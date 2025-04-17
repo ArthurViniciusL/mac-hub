@@ -1,6 +1,6 @@
 
 
-import { PagesContent } from "@/utils/PagesContent";
+import { PagesContent } from "@/utils/Objects/PagesContent";
 import RenderCard from "./components/Card";
 import Card from "./components/Card/CardContent";
 import Banner from "./components/Card/CardContent/CardBanner";

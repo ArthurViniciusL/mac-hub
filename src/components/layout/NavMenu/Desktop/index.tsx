@@ -1,22 +1,36 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import css from "./desktop.module.css";
 
 import LogoMacHub from "@/components/Ui/Icons/LogoMacHub";
-import BtnNavMenu from "@/components/Ui/Buttons/BtnNavMenu";
+import BtnPanel from "@/components/Ui/Buttons/BtnPanel";
 import { NavMenuProps } from "..";
 import OpenMenu from "./OpenMenu";
 import CloseMenu from "./CloseMenu";
+import { LocalStorage } from "@/utils/Class/LocalStorage";
 
 export default function DesktopMenu({ content }: NavMenuProps) {
 
     const [isOpen, setIsOpen] = useState<boolean>(true);
 
     function handleIsOpen() {
-        setIsOpen(!isOpen)
+        setIsOpen(!isOpen);
+        LocalStorage.setPanelMode(!isOpen)
     }
+
+    useEffect(() => {
+        const storage = LocalStorage.getPanelMode();
+        
+        console.log(storage)
+            
+        if (!storage) {
+            setIsOpen(storage);
+        }
+
+    },[isOpen]);
+
 
     const art = {
         top: "art:w:full art:flex art:gap:base art:align-items:start art:justify-content:between",
@@ -32,7 +46,7 @@ export default function DesktopMenu({ content }: NavMenuProps) {
             <aside className={`${css.container} ${art.aside}`}>
                 <div className={art.top} style={{"height":"8rem"}}>
                     <LogoMacHub size={90} />
-                    <BtnNavMenu state={isOpen} setState={handleIsOpen} />
+                    <BtnPanel state={isOpen} setState={handleIsOpen} />
                 </div>
                 {
                     isOpen ?
