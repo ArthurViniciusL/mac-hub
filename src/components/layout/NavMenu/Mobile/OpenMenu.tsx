@@ -35,8 +35,8 @@ export default function OpenMenu({ content, setPainelState }: NavMenuProps) {
                                 </li>
                             ))
                         }
+                        <BugReport />
                     </ul>
-                    <BugReport />
                 </nav>
 
             </main>

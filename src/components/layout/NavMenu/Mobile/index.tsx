@@ -17,7 +17,7 @@ export default function MobileMenu({ content }: NavMenuProps ) {
 
     useEffect(() => {
         const storage = LocalStorage.getPanelMode();
-        setIsOpen(storage)
+        setIsOpen(storage);
     },[isOpen]);
 
     return (

@@ -10,6 +10,7 @@ import { NavMenuProps } from "..";
 import OpenMenu from "./OpenMenu";
 import CloseMenu from "./CloseMenu";
 import { LocalStorage } from "@/utils/Class/LocalStorage";
+import BugReport from "@/components/BugReport";
 
 export default function DesktopMenu({ content }: NavMenuProps) {
 
@@ -22,14 +23,14 @@ export default function DesktopMenu({ content }: NavMenuProps) {
 
     useEffect(() => {
         const storage = LocalStorage.getPanelMode();
-        
+
         console.log(storage)
-            
+
         if (!storage) {
             setIsOpen(storage);
         }
 
-    },[isOpen]);
+    }, [isOpen]);
 
 
     const art = {
@@ -44,8 +45,19 @@ export default function DesktopMenu({ content }: NavMenuProps) {
     return (
         <>
             <aside className={`${css.container} ${art.aside}`}>
-                <div className={art.top} style={{"height":"8rem"}}>
-                    <LogoMacHub size={90} />
+                <div className={art.top} style={{ "height": "8rem" }}>
+                    <div className="art:flex art:row art:gap:sm">
+                        <LogoMacHub size={90} />
+                        {
+                            isOpen ? (
+                                <h2 className="art:font:base art:p-t:base">Mac HUB</h2>
+
+                            ) :
+                                (
+                                    <></>
+                                )
+                        }
+                    </div>
                     <BtnPanel state={isOpen} setState={handleIsOpen} />
                 </div>
                 {
@@ -55,9 +67,10 @@ export default function DesktopMenu({ content }: NavMenuProps) {
                         )
                         :
                         (
-                            <CloseMenu content={content} art={art}/>
+                            <CloseMenu content={content} art={art} />
                         )
                 }
+                <BugReport />
             </aside >
         </>
     );
