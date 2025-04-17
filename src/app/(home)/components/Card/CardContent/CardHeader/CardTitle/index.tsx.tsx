@@ -5,7 +5,7 @@ interface CardTitleProps {
 export default function CardTitle({ text }: CardTitleProps) {
     return (
         <>
-            <h2 title={text} className="art:font:capitalize art:font:semibold art:font:lg">
+            <h3 title={text} className="art:font:capitalize art:font:semibold art:font:lg">
                 {
                     text.length > 18 ?
                         (
@@ -16,7 +16,7 @@ export default function CardTitle({ text }: CardTitleProps) {
                             text + "."
                         )
                 }
-            </h2>
+            </h3>
         </>
     )
 }
