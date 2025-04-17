@@ -60,3 +60,20 @@ li {
 .art\:cursor\:help {
   cursor: help;
 }
+
+.art\:scrollbar\:none {
+  scrollbar-width: none;
+}
+
+
+.art\:pointer\:none {
+  pointer-events: none;
+}
+
+.art\:bg\:black\:60\% {
+    background: rgba(var(--black-rgb), 0.6);
+}
+
+.art\:bg\:black\:70\% {
+  background: rgba(var(--black-rgb), 0.7);
+}

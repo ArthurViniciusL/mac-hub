@@ -1,11 +1,10 @@
-"use client";
-
-import { useDeviceContext } from "@/hooks/useDeviceContext";
 import { BugIcon } from "lucide-react";
 
-export default function BugReport() {
+interface BugReportProps {
+    isOpen: boolean;
+}
 
-    const { isMobile } = useDeviceContext();
+export default function BugReport({ isOpen }: BugReportProps) {
 
     const art = {
         container: "art:w:fit art:p:base art:bg:yellow:10% art:hover:bg:yellow:20%  art:border-rd:lg art:border:thin art:hover:border:yellow-01 art:border:white-01 art:border:solid",
@@ -18,14 +17,14 @@ export default function BugReport() {
                 <a className={art.content} href="https://forms.office.com/r/sATFTy7hU6" target="_blank">
                     <BugIcon size={20} />
                     {
-                        isMobile ?
+                        isOpen ?
                             (
-                                <></>
+                                <>Reportar bug</>
                             )
                             :
                             (
                                 <>
-                                    Reportar bug
+
                                 </>
                             )
                     }

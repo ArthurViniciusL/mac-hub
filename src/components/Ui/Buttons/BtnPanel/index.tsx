@@ -11,7 +11,7 @@ export default function BtnPanel({ state, setState }: IButton) {
                 state ?
                     (
                         <>
-                            <button onClick={setState} className={btnPainel}>
+                            <button onClick={setState} className={btnPainel} >
                                 <IconCloseMenu size={20} />
                             </button>
                         </>

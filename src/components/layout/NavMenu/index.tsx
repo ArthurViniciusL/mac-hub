@@ -7,7 +7,7 @@ import { IPagesContent } from "@/types/IPagesContent";
 import { PagesContent } from "@/utils/Objects/PagesContent";
 
 export interface NavMenuProps {
-    art?: any;
+    art?:any;
     content: IPagesContent[];
     setPainelState?: () => void;
 }

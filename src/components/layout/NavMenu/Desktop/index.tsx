@@ -35,12 +35,11 @@ export default function DesktopMenu({ content }: NavMenuProps) {
 
 
     const art = {
+        aside: "art:p:sm art:gap:2xl ",
         top: "art:w:full art:flex art:gap:base art:align-items:start art:justify-content:between",
-        aside: "art:p:sm art:gap:2xl",
-        nav: "art:overflow:auto art:h:full art:flex art:justify-content:start art:align-items:start",
-        ul: "art:h:full art:flex art:col art:gap:base",
-        li: "art:border-b:solid art:border:thin art:border:white-02 art:hover:border:none",
-        btn_icon: "art:p:sm art:bg:none art:hover:bg:white-02 art:border-rd:base art:ease:quick"
+        nav: "art:overflow:auto art:w:full art:h:full art:flex art:justify-content:start art:align-items:start art:col art:gap:base",
+        ul: "art:w:full art:h:full art:flex art:col art:gap:base art:justify-content:between",
+        li: "art:border-b:solid art:border:thin art:border:white-02 art:hover:border:none"
     }
 
     return (
@@ -60,7 +59,6 @@ export default function DesktopMenu({ content }: NavMenuProps) {
                         }
                     </div>
                     <BtnPanel state={isOpen} setState={handleIsOpen} />
-
                 </div>
                 {
                     isOpen ?
@@ -72,7 +70,7 @@ export default function DesktopMenu({ content }: NavMenuProps) {
                             <CloseMenu content={content} art={art} />
                         )
                 }
-                <BugReport />
+                <BugReport isOpen={isOpen} />
             </aside >
         </>
     );
