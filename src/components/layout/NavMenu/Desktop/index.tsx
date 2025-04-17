@@ -24,14 +24,14 @@ export default function DesktopMenu({ content }: NavMenuProps) {
     }
 
     useEffect(() => {
-        
+
         if (!storage) {
             setIsOpen(true);
         } else {
             setIsOpen(storage.getPanelMode);
         }
 
-    },[]);
+    }, []);
 
 
     const art = {
