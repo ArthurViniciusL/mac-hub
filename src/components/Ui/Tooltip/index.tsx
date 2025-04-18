@@ -8,15 +8,19 @@ interface ToolTipProps {
 }
 
 export default function ToolTip({ children, msg }: ToolTipProps) {
-
+    
+    
     const [isOpen, setIsOpen] = useState<boolean>(false);
-
+    const [mouseCoords, setMouseCoords] = useState({ x: 0, y: 0 });
+    
+    const tooltipPadding = 15;
+    
     function handleOpen() {
         if (!isOpen) {
-            setIsOpen(true)
+            setIsOpen(true);
             // setTimeout(() => setIsOpen(true), 500)
         }
-        setTimeout(() => setIsOpen(false), 2000);
+        setTimeout(() => setIsOpen(false), 3000);
     }
 
     function handleClose() {
@@ -25,27 +29,37 @@ export default function ToolTip({ children, msg }: ToolTipProps) {
         }
     }
 
+    function handleMouseMove(e: React.MouseEvent) {
+        setMouseCoords({ x: e.clientX, y: e.clientY });
+    }
+
     const art = {
-        msg: "art:absolute art:ease-out:smooth art:m:xl art:pointer:none art:p:sm art:bg:black:70% art:font:capitalize art:font:white-01 art:border-rd:sm"
+        container: "art:relative art:w:max-content art:h:fit",
+        tooltip: "art:pointer:none art:fixed art:bg:black:70% art:font:capitalize art:font:white-01 art:p:sm art:border-rd:sm"
     }
 
     return (
         <>
-            {/* se esconde: */}
-
-            {
-                isOpen ? (
-                    <span className={art.msg} style={{"fontSize":"0.9rem", "transition":"opacity 1s ease-out"}}>
-                        {msg}.
-                    </span>
-                ) : (
-                    <></>
-                )
-            }
-
-            <span className="art:w:fit art:h:fit" onMouseEnter={handleOpen} onMouseLeave={handleClose} onClick={()=>setIsOpen(false)}>
+            <div className={art.container} onMouseEnter={handleOpen} onMouseLeave={handleClose} onClick={handleClose} onMouseMove={handleMouseMove}>
                 {children}
-            </span>
+                {
+                    isOpen ? (
+                        <>
+                            <span className={art.tooltip}
+                                style={{
+                                    "fontSize": "0.9rem", "zIndex": "100",
+                                    top: mouseCoords.y + tooltipPadding,
+                                    left: mouseCoords.x + tooltipPadding,
+                                }}>
+                                {msg}
+                            </span>
+                        </>
+                    ) : (
+                        <></>
+                    )
+                }
+
+            </div>
         </>
     )
 }
