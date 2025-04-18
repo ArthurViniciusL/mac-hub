@@ -14,7 +14,7 @@ export default function Home() {
 
     return (
         <>
-            <Main className="art:w:fit">
+            <Main className="art:w:fit art:fadeInOut">
                 <RenderCard>
                     {
                         data.slice(1).map((card, index) => (

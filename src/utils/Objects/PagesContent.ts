@@ -145,8 +145,8 @@ export const PagesContent = [
         "icon": "IconTeam",
         "title": "Equipe",
         "about": "Visualize a lista de contatos da equipe do MAC.",
-        "link": AppRoutes.underConstruction,
-        "target": "_blank",
+        "link": AppRoutes.team,
+        "target": "_self",
         "aboutBanner": "O Nascimento de Vênus - Sandro Botticelli",
         "color": "purple"
     }

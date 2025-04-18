@@ -1,0 +1,16 @@
+.art\:fadeInOut {   
+    opacity: 0;
+    animation: fadeInOut 2s ease-in-out forwards;
+}
+
+@keyframes fadeInOut {
+    0% {
+      opacity: 0;
+      /* Inicia invisível */
+    }
+  
+    100% {
+      opacity: 1;
+      /* Volta a ficar invisível no final */
+    }
+  }

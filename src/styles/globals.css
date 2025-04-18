@@ -1,5 +1,5 @@
 @import url('art-css/art.css');
-
+@import url('animation.css');
 
 /* * {
   scrollbar-width: none;
@@ -7,9 +7,9 @@
 
 html {
   scrollbar-width: none;
-  opacity: 0;
-  animation: fadeInOut 2s ease-in-out forwards;
   display: flex;
+  /* opacity: 0; */
+  /* animation: fadeInOut 2s ease-in-out forwards; */
 }
 
 @keyframes fadeInOut {
@@ -81,31 +81,4 @@ li {
 
 .art\:inline-block {
   display: inline-block;
-}
-
-
-.tooltip {
-  position: absolute;
-  /* O tooltip é posicionado em relação ao tooltip-container */
-  top: 2.5rem;
-  /* Distância do topo do tooltip-container */
-  left: 50%;
-  /* Posiciona o tooltip no centro do tooltip-container */
-  
-  transform: translateY(-50%);
-  /* Ajusta o tooltip para que fique exatamente centralizado horizontalmente */
-
-
-  background-color: #333;
-  /* Cor de fundo do tooltip */
-  color: white;
-  /* Cor do texto do tooltip */
-  padding: 0.5rem 1rem;
-  /* Padding para criar espaço dentro do tooltip */
-  border-radius: 0.25rem;
-  /* Arredonda as bordas do tooltip */
-  font-size: 0.9rem;
-  /* Tamanho da fonte do tooltip */
-  z-index: 100;
-  /* Garante que o tooltip seja exibido acima de outros elementos */
 }
