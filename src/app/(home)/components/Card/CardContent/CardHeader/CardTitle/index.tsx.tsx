@@ -21,7 +21,6 @@ export default function CardTitle({ text }: CardTitleProps) {
                     }
                 </h3>
             </ToolTip>
-
         </>
     )
 }

@@ -40,13 +40,19 @@ li {
   list-style: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  
-}
+@media (prefers-color-scheme: dark) {}
 
 
 .art\:log\:red {
   border: solid red 0.5px;
+}
+
+.art\:font\:normal {
+  font-weight: normal;
+}
+
+.art\:w\:max-content {
+  width: max-content;
 }
 
 .art\:h\:50\% {
@@ -65,15 +71,53 @@ li {
   scrollbar-width: none;
 }
 
+.art\:scrollbar\:thin {
+  scrollbar-width: thin;
+}
+
+.art\:scrollbar\:white-01 {
+  scrollbar-color: var(--white-01) var(--white-01);
+}
 
 .art\:pointer\:none {
   pointer-events: none;
 }
 
 .art\:bg\:black\:60\% {
-    background: rgba(var(--black-rgb), 0.6);
+  background: rgba(var(--black-rgb), 0.6);
 }
 
 .art\:bg\:black\:70\% {
   background: rgba(var(--black-rgb), 0.7);
+}
+
+.art\:inline-block {
+  display: inline-block;
+}
+
+
+.tooltip {
+  position: absolute;
+  /* O tooltip é posicionado em relação ao tooltip-container */
+  top: 2.5rem;
+  /* Distância do topo do tooltip-container */
+  left: 50%;
+  /* Posiciona o tooltip no centro do tooltip-container */
+  
+  transform: translateY(-50%);
+  /* Ajusta o tooltip para que fique exatamente centralizado horizontalmente */
+
+
+  background-color: #333;
+  /* Cor de fundo do tooltip */
+  color: white;
+  /* Cor do texto do tooltip */
+  padding: 0.5rem 1rem;
+  /* Padding para criar espaço dentro do tooltip */
+  border-radius: 0.25rem;
+  /* Arredonda as bordas do tooltip */
+  font-size: 0.9rem;
+  /* Tamanho da fonte do tooltip */
+  z-index: 100;
+  /* Garante que o tooltip seja exibido acima de outros elementos */
 }

@@ -2,8 +2,6 @@
 
 import { useEffect, useState } from "react";
 
-import css from "./desktop.module.css";
-
 import LogoMacHub from "@/components/Ui/Icons/LogoMacHub";
 import BtnPanel from "@/components/Ui/Buttons/BtnPanel";
 import { NavMenuProps } from "..";
@@ -35,16 +33,16 @@ export default function DesktopMenu({ content }: NavMenuProps) {
 
 
     const art = {
-        aside: "art:p:sm art:gap:2xl ",
-        top: "art:w:full art:flex art:gap:base art:align-items:start art:justify-content:between",
-        nav: "art:overflow:auto art:w:full art:h:full art:flex art:justify-content:start art:align-items:start art:col art:gap:base",
+        aside: "art:w:fit art:h:device art:flex art:col art:p:sm art:gap:2xl",
+        top: "art:w:full art:flex art:gap:base art:align-items:start art:justify-content:between ",
+        nav: "art:overflow:auto art:scrollbar:thin art:scrollbar:white-01 art:w:full art:h:full art:flex art:justify-content:start art:align-items:start art:col art:gap:base",
         ul: "art:w:full art:h:full art:flex art:col art:gap:base art:justify-content:between",
         li: "art:border-b:solid art:border:thin art:border:white-02 art:hover:border:none"
     }
 
     return (
         <>
-            <aside className={`${css.container} ${art.aside}`}>
+            <aside className={art.aside}>
                 <div className={art.top} style={{ "height": "8rem" }}>
                     <div className="art:w:fit art:flex art:row art:gap:sm">
                         <LogoMacHub size={80} />

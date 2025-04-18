@@ -19,7 +19,7 @@ export default function Banner({ src, about, alt }: BannerProps) {
     return (
         <>
             <div className={art.container}>
-                <ToolTip msg={about}>
+                <ToolTip msg={`Quadro: ${about}`}>
                     {
                         !src ?
                             (

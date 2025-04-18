@@ -1,4 +1,5 @@
 import { BugIcon } from "lucide-react";
+import ToolTip from "../Ui/Tooltip";
 
 interface BugReportProps {
     isOpen: boolean;
@@ -15,21 +16,23 @@ export default function BugReport({ isOpen }: BugReportProps) {
         <>
             <div className={art.container} style={{ "right": "0", "top": "0", "zIndex": "1" }} >
                 <a className={art.content} href="https://forms.office.com/r/sATFTy7hU6" target="_blank">
-                    <BugIcon size={20} />
-                    {
-                        isOpen ?
-                            (
-                                <>Reportar bug</>
-                            )
-                            :
-                            (
-                                <>
+                    <ToolTip msg="Reportar bug">
+                        <BugIcon size={20} />
+                        {
+                            isOpen ?
+                                (
+                                    <>Reportar bug</>
+                                )
+                                :
+                                (
+                                    <>
 
-                                </>
-                            )
-                    }
+                                    </>
+                                )
+                        }
+                    </ToolTip >
                 </a>
-            </div>
+            </div >
         </>
     );
 }
