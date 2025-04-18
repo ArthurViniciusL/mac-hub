@@ -37,7 +37,7 @@ export default function DesktopMenu({ content }: NavMenuProps) {
         top: "art:w:full art:flex art:gap:base art:align-items:start art:justify-content:between ",
         nav: "art:overflow:auto art:scrollbar:thin art:scrollbar:white-01 art:w:full art:h:full art:flex art:justify-content:start art:align-items:start art:col art:gap:base",
         ul: "art:w:full art:h:full art:flex art:col art:gap:base art:justify-content:between",
-        li: "art:border-b:solid art:border:thin art:border:white-02 art:hover:border:none"
+        li: "art:w:full art:border-b:solid art:border:thin art:border:white-02 art:hover:border:none"
     }
 
     return (

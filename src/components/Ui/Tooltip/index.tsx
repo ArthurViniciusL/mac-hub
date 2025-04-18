@@ -17,9 +17,9 @@ export default function ToolTip({ children, msg }: ToolTipProps) {
 
     function handleOpen() {
         if (!isOpen) {
-            setTimeout(() => setIsOpen(true), 20);
+            setTimeout(() => setIsOpen(true), 2);
         }
-        setTimeout(() => setIsOpen(false), 2000);
+        setTimeout(() => setIsOpen(false), 4000);
     }
 
     function handleClose() {
@@ -34,7 +34,7 @@ export default function ToolTip({ children, msg }: ToolTipProps) {
     }
 
     const art = {
-        container: "art:relative art:w:max-content art:h:fit",
+        container: "art:relative art:h:fit",
         tooltip: "art:pointer:none art:fixed art:bg:black:70% art:font:capitalize art:font:white-01 art:p:sm art:border-rd:sm"
     }
 
