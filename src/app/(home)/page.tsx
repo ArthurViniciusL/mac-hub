@@ -6,6 +6,7 @@ import CardHeader from "./components/Card/CardContent/CardHeader";
 import PageIcon from "@/components/Ui/Icons/PageIcon";
 import CardTitle from "./components/Card/CardContent/CardHeader/CardTitle/index.tsx";
 import CardDescription from "./components/Card/CardContent/CardDescription";
+import Main from "@/components/Ui/Main";
 
 export default function Home() {
 
@@ -13,7 +14,7 @@ export default function Home() {
 
     return (
         <>
-            <main className="art:w:fit">
+            <Main className="art:w:fit">
                 <RenderCard>
                     {
                         data.slice(1).map((card, index) => (
@@ -35,7 +36,7 @@ export default function Home() {
                         ))
                     }
                 </RenderCard>
-            </main>
+            </Main>
         </>
     );
 }

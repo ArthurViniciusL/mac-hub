@@ -13,7 +13,7 @@ export default function CloseMenu({ content, setPainelState }: NavMenuProps) {
 
     return (
         <>
-            <footer className={art.box} style={{ "bottom": "0", "left": "0" }}>
+            <footer className={art.box} style={{ "bottom": "0", "left": "0", "zIndex":"200" }}>
                 <nav className={art.nav}>
                     <ul className={art.content}>
                         {

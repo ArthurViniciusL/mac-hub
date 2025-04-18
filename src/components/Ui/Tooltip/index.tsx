@@ -11,15 +11,13 @@ export default function ToolTip({ children, msg }: ToolTipProps) {
 
 
     const [isOpen, setIsOpen] = useState<boolean>(false);
-    // const [mouseTime, setMouseTime] = useState<number>(0);
     const [mouseCoords, setMouseCoords] = useState({ x: 0, y: 0 });
 
     const tooltipPadding = 15;
 
     function handleOpen() {
         if (!isOpen) {
-            // setIsOpen(true);
-            setTimeout(() => setIsOpen(true), 300);
+            setTimeout(() => setIsOpen(true), 20);
         }
         setTimeout(() => setIsOpen(false), 2000);
     }
@@ -32,7 +30,7 @@ export default function ToolTip({ children, msg }: ToolTipProps) {
 
     function handleMouseMove(e: React.MouseEvent) {
         setMouseCoords({ x: e.clientX, y: e.clientY });
-        setTimeout(() => setIsOpen(false), 2000);
+        setTimeout(() => setIsOpen(false), 1500);
     }
 
     const art = {

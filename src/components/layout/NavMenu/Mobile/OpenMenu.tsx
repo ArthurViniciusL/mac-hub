@@ -15,7 +15,7 @@ export default function OpenMenu({ content, setPainelState }: NavMenuProps) {
 
     return (
         <>
-            <main className={art.container}>
+            <main className={art.container} style={{"zIndex":"200"}}>
                 <div className={art.box_top}>
                     <div className="art:flex art:row art:gap:sm">
                         <LogoMacHub size={50} />
@@ -35,7 +35,7 @@ export default function OpenMenu({ content, setPainelState }: NavMenuProps) {
                                 </li>
                             ))
                         }
-                        <BugReport />
+                        <BugReport isOpen={true} />
                     </ul>
                 </nav>
 

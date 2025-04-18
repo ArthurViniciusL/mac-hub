@@ -24,18 +24,6 @@ html {
   }
 }
 
-main {
-  width: 100%;
-  max-width: 90rem;
-}
-
-@media (max-width: 800px) {
-  main {
-    margin-bottom: 4.5rem;
-  }
-}
-
-
 li {
   list-style: none;
 }
