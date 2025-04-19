@@ -1,10 +1,10 @@
-#main-component {
+.main-component {
     /* width: 100%; */
     max-width: 90rem;
 }
 
 @media (max-width: 800px) {
-    #main-component {
+    .main-component {
         margin-bottom: 4.5rem;
     }
 }

@@ -10,7 +10,7 @@ interface MainProps {
 export default function Main({ className, children }: MainProps) {
     return (
         <>
-            <main id="main-component" className={className}>
+            <main id="" className={`main-component ${className}`}>
                 {children}
             </main>
         </>

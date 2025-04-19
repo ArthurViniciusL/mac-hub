@@ -8,7 +8,8 @@ export default function CloseMenu({ content, setPainelState }: NavMenuProps) {
         box: "art:w:full art:h:03 art:fixed art:m-b:2xl",
         nav: "art:full art:flex art:align-items:between art:justify-content:center art:p:sm",
         content: "art:w:full art:max-w:30 art:p:base art:bg:white-01 art:border:solid art:border:white-03 art:border:thin art:border-rd:lg art:flex art:align-items:center art:justify-content:between",
-        boxLinks: "art:bg:none art:hover:none"
+        boxLinks: "art:bg:none art:hover:none",
+        btn_open:"art:bg:none art:font:black-01"
     }
 
     return (
@@ -28,7 +29,7 @@ export default function CloseMenu({ content, setPainelState }: NavMenuProps) {
                             ))
                         }
                         <li>
-                            <button className={art.boxLinks}
+                            <button className={art.btn_open}
                                 style={{ "width": "2.2rem", "height": "2.2rem" }}
                                 onClick={setPainelState}
                             >

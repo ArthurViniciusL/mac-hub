@@ -10,7 +10,8 @@ export default function OpenMenu({ content, setPainelState }: NavMenuProps) {
         container:"art:w:device art:h:device art:fixed art:top:0 art:bg:white-02 art:p:base art:flex art:col art:gap:base",
         box_top:"art:flex art:justify-content:between",
         box_nav:"art:h:full art:overflow:auto art:flex art:col art:justify-content:start art:align-items:center",
-        content_ul:"art:flex art:col art:gap:base"
+        content_ul:"art:flex art:col art:gap:base",
+        btn_close:"art:bg:none art:font:black-01"
     }
 
     return (
@@ -21,7 +22,7 @@ export default function OpenMenu({ content, setPainelState }: NavMenuProps) {
                         <LogoMacHub size={50} />
                         <h1 className="art:font:base art:font:medium art:m-t:sm">Mac Hub</h1>
                     </div>
-                    <button onClick={setPainelState} className="art:p:sm art:border-rd:base art:flex art:font:black-01">
+                    <button onClick={setPainelState} className={art.btn_close}>
                         <IconCloseMobileMenu size={20} />
                     </button>
                 </div>

@@ -19,7 +19,7 @@ export default function ToolTip({ children, msg }: ToolTipProps) {
         if (!isOpen) {
             setTimeout(() => setIsOpen(true), 2);
         }
-        setTimeout(() => setIsOpen(false), 4000);
+        //setTimeout(() => setIsOpen(false), 4000);
     }
 
     function handleClose() {
