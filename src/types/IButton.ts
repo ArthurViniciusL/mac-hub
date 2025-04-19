@@ -10,4 +10,6 @@ export interface IButton {
     iconSize?: number;
     iconName?: string;
     iconColor?: string;
+    bgColor?:string;
+    labelColor?:string;
 }
