@@ -2,7 +2,7 @@
 
 import Main from "@/components/Ui/Main";
 import { useHeaderContext } from "@/hooks/useHeaderContext"
-import Image from "next/image";
+//import Image from "next/image";
 import { useEffect } from "react";
 import BtnTalkTo from "./components/BtnTalkTo";
 import { TeamProfiles } from "@/utils/Objects/TeamProfiles";
