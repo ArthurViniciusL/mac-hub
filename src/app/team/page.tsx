@@ -34,7 +34,7 @@ export default function Team() {
     const art = {
         container: "art:w:full art:flex art:col art:wrap art:gap:base art:justify-content:center art:align-items:start",
         box: "art:w:full art:flex art:justify-content:center",
-        card: "art:w:full art:max-w:30 art:overflow:hidden art:flex art:gap:sm art:row art:wrap art:align-items:start art:justify-content:between art:p:base art:border:solid art:border:thin art:border:white-03 art:hover:border:white-04 art:border-rd:lg art:hover:border-rd:base art:ease:quick",
+        card: "art:w:full art:relative art:max-w:30 art:overflow:hidden art:flex art:gap:sm art:row art:wrap art:align-items:start art:justify-content:between art:p:base art:border:solid art:border:thin art:border:white-03 art:hover:border:white-04 art:border-rd:lg art:hover:border-rd:base art:ease:quick",
 
         box_user: "art:flex art:row art:wrap  art:gap:base",
 

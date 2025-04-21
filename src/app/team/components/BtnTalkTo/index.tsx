@@ -5,7 +5,7 @@ import { IButton } from "@/types/IButton";
 export default function BtnTalkTo({ href, label, bgColor }: IButton) {
     return (
         <>
-            <div className="art:w:full art:flex art:justify-content:end">
+            <div className="art:w:full art:absolute art:top:0 art:right:0 art:m:base art:flex art:justify-content:end">
                 <div className="art:w:fit">
                     <ToolTip msg={`Falar com ${label}`}>
                         <a className="" href={`mailto:${href}`} target="_blank">
