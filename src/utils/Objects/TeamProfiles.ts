@@ -2,7 +2,7 @@ export const TeamProfiles = [
     {
         "id":0,
         "name":"arthur vinicius souza lucena",
-        "position":"software engineer",
+        "position":"estagiário", //software engineer
         "email":"arthur.lucena@museumaccg.org.br",
         "color_theme":"yellow"
     },
