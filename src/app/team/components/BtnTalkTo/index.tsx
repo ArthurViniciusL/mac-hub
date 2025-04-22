@@ -9,7 +9,7 @@ export default function BtnTalkTo({ href, label, bgColor }: IButton) {
                 <div className="art:w:fit">
                     <ToolTip msg={`Falar com ${label}`}>
                         <a className="" href={`mailto:${href}`} target="_blank">
-                            <button className={`art:w:full art:flex art:p:sm art:font:${bgColor}-01 art:bg:${bgColor}:10% art:hover:bg:${bgColor}:20% art:border-rd:sm`}>
+                            <button className={`art:w:full art:ease:quick art:flex art:p:sm art:font:${bgColor}-01 art:bg:${bgColor}:10% art:hover:bg:${bgColor}:20% art:border-rd:sm`}>
                                 <IconTalkTo size={22} />
                             </button>
                         </a>

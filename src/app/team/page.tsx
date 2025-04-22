@@ -69,7 +69,7 @@ export default function Team() {
                                                             )
                                                     }
                                                 </h3>
-                                                <h4 className="art:font:black-04 art:font:capitalize art:font:medium" style={{"fontSize":"0.9rem"}}>
+                                                <h4 className="art:font:black-04 art:font:capitalize art:font:medium" style={{ "fontSize": "0.9rem" }}>
                                                     {
                                                         user.position.length > 17 ?
                                                             (
@@ -82,7 +82,7 @@ export default function Team() {
 
                                             </div>
                                             <ToolTip msg={user.email}>
-                                                <a href={`mailto:${user.email}`} className={`art:font:black-04 art:flex art:hover:font:${user.color_theme}-01`}>
+                                                <a href={`mailto:${user.email}`} className={`art:ease:quick art:font:black-04 art:flex art:hover:font:${user.color_theme}-01`}>
                                                     {
                                                         user.email.length > 31 ?
                                                             (
