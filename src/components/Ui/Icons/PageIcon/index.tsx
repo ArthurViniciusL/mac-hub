@@ -1,4 +1,4 @@
-import { IconAppsMicrosoft, IconDocumentLibrary, IconEducational, IconEventPlanning, IconEventsCalendar, IconHlightsOfTheDay, IconMacGallery, IconMainDocuments, IconMural, IconReportsAndMetrics, IconSpaceReservation, IconTeam } from "@/app.modules";
+import { IconAppsMicrosoft, IconDocumentLibrary, IconEducational, IconEventPlanning, IconEventsCalendar, IconHlightsOfTheDay, IconMacGallery, IconMainDocuments, IconMural, IconReportsAndMetrics, IconSpaceReservation, IconTeam } from "@/modules/app.modules";
 
 interface PageIconProp {
     name: string;

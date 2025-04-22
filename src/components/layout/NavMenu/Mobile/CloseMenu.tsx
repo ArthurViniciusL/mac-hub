@@ -1,5 +1,5 @@
 import PageIcon from "@/components/Ui/Icons/PageIcon";
-import { IconOpenMobileMenu } from "@/app.modules";
+import { IconOpenMobileMenu } from "@/modules/app.modules";
 import { NavMenuProps } from "..";
 
 export default function CloseMenu({ content, setPainelState }: NavMenuProps) {

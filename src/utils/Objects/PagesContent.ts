@@ -10,7 +10,7 @@ import banner_09 from "@/assets/images/banners/A Casa Amarela - Vincent van Gogh
 import banner_10 from "@/assets/images/banners/O Sepultamento de Cristo Pintura - Caravaggio.png";
 import banner_11 from "@/assets/images/banners/O Nascimento de Venus - Sandro Botticelli.png";
 
-import AppRoutes from "@/app.routes";
+import AppRoutes from "@/modules/app.routes";
 
 
 export const PagesContent = [

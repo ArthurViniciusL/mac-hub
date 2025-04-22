@@ -1,4 +1,4 @@
-import { IconCloseMobileMenu } from "@/app.modules";
+import { IconCloseMobileMenu } from "@/modules/app.modules";
 import BugReport from "@/components/BugReport";
 import BtnPageMenu from "@/components/Ui/Buttons/BtnPageMenu";
 import LogoMacHub from "@/components/Ui/Icons/LogoMacHub";

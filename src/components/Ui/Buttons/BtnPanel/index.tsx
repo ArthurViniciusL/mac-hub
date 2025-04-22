@@ -1,4 +1,4 @@
-import { IconCloseMenu, IconOpenMenu } from "@/app.modules";
+import { IconCloseMenu, IconOpenMenu } from "@/modules/app.modules";
 import { IButton } from "@/types/IButton";
 import ToolTip from "../../Tooltip";
 

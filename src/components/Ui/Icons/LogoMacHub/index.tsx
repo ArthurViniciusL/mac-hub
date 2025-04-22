@@ -6,7 +6,7 @@ import light from "@/assets/icons/app-logo/mac_hub_light.svg";
 import dark from "@/assets/icons/app-logo/mac_hub_dark.svg";
 
 import { useEffect, useState } from "react";
-import AppRoutes from "@/app.routes";
+import AppRoutes from "@/modules/app.routes";
 import ToolTip from "../../Tooltip";
 
 interface LogoMacHubProps {

@@ -1,4 +1,4 @@
-import { IconImageNotFount } from "@/app.modules";
+import { IconImageNotFount } from "@/modules/app.modules";
 import ToolTip from "@/components/Ui/Tooltip";
 import Image from "next/image";
 

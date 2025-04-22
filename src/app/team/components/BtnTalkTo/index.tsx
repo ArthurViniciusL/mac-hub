@@ -1,4 +1,4 @@
-import { IconTalkTo } from "@/app.modules";
+import { IconTalkTo } from "@/modules/app.modules";
 import ToolTip from "@/components/Ui/Tooltip";
 import { IButton } from "@/types/IButton";
 
