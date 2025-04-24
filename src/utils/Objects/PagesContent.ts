@@ -65,7 +65,7 @@ export const PagesContent = [
     {
         "id": 4,
         "banner": banner_04,
-        "icon": "IconAppsMicrosoft",
+        "icon": "IconMs",
         "title": "App's Microsoft",
         "about": "Acesse a launcher de aplicativos Microsoft",
         "link": AppRoutes.msApps,

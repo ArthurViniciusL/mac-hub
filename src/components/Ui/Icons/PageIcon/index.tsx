@@ -1,4 +1,7 @@
 import { IconAppsMicrosoft, IconDocumentLibrary, IconEducational, IconEventPlanning, IconEventsCalendar, IconHlightsOfTheDay, IconMacGallery, IconMainDocuments, IconMural, IconReportsAndMetrics, IconSpaceReservation, IconTeam } from "@/modules/app.modules";
+import Image from "next/image";
+
+import IconMs from "@/assets/icons/ms_icon.svg";
 
 interface PageIconProp {
     name: string;
@@ -34,6 +37,8 @@ export default function PageIcon({ name, size, color }: PageIconProp) {
                 return <IconEducational width={size} height={size} />;
             case "IconTeam":
                 return <IconTeam width={size} height={size} />;
+            case "IconMs":
+                return <Image src={IconMs} width={size} height={size} alt=""/>
 
             default:
                 return null;
