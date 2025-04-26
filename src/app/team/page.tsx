@@ -13,7 +13,7 @@ export default function Team() {
     const { setTitle } = useHeaderContext();
 
     useEffect(() => {
-        setTitle("Equipe")
+        setTitle("Equipe");
     }, []);
 
     const users = TeamProfiles;

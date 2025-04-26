@@ -40,7 +40,7 @@ export default function ToolTip({ children, msg }: ToolTipProps) {
 
     return (
         <>
-            <div className={art.container} onMouseEnter={handleOpen} onMouseLeave={handleClose} onClick={handleClose} onMouseMove={handleMouseMove}>
+            <div className={art.container} onMouseEnter={handleOpen} onMouseLeave={handleClose} onMouseUp={handleClose} onMouseDown={handleClose} onClick={handleClose} onMouseMove={handleMouseMove}>
                 {children}
                 {
                     isOpen ? (

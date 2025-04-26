@@ -1,6 +1,7 @@
 import PageIcon from "@/components/Ui/Icons/PageIcon";
 import { IconOpenMobileMenu } from "@/modules/app.modules";
 import { NavMenuProps } from "..";
+import ToolTip from "@/components/Ui/Tooltip";
 
 export default function CloseMenu({ content, setPainelState }: NavMenuProps) {
 
@@ -9,32 +10,36 @@ export default function CloseMenu({ content, setPainelState }: NavMenuProps) {
         nav: "art:full art:flex art:align-items:between art:justify-content:center art:p:sm",
         content: "art:w:full art:max-w:30 art:p:base art:bg:white-01 art:border:solid art:border:white-03 art:border:thin art:border-rd:lg art:flex art:align-items:center art:justify-content:between",
         boxLinks: "art:bg:none art:hover:none",
-        btn_open:"art:bg:none art:font:black-01"
+        btn_open: "art:bg:none art:font:black-01"
     }
 
     return (
         <>
-            <footer className={art.box} style={{ "bottom": "0", "left": "0", "zIndex":"200" }}>
+            <footer className={art.box} style={{ "bottom": "0", "left": "0", "zIndex": "200" }}>
                 <nav className={art.nav}>
                     <ul className={art.content}>
                         {
                             content.slice(0, 4).map((menu, index) => (
                                 <li key={index}>
-                                    <a href={menu.link} target={menu.target}>
-                                        <button className={art.boxLinks}>
-                                            <PageIcon name={menu.icon} size={20} color={menu.color} />
-                                        </button>
-                                    </a>
+                                    <ToolTip msg={menu.title}>
+                                        <a href={menu.link} target={menu.target}>
+                                            <button className={art.boxLinks}>
+                                                <PageIcon name={menu.icon} size={20} color={menu.color} />
+                                            </button>
+                                        </a>
+                                    </ToolTip>
                                 </li>
                             ))
                         }
                         <li>
-                            <button className={art.btn_open}
-                                style={{ "width": "2.2rem", "height": "2.2rem" }}
-                                onClick={setPainelState}
-                            >
-                                <IconOpenMobileMenu size={20} />
-                            </button>
+                            <ToolTip msg="Abrir menu">
+                                <button className={art.btn_open}
+                                    style={{ "width": "2.2rem", "height": "2.2rem" }}
+                                    onClick={setPainelState}
+                                >
+                                    <IconOpenMobileMenu size={20} />
+                                </button>
+                            </ToolTip>
                         </li>
                     </ul>
                 </nav>
