@@ -1,5 +1,7 @@
 "use client";
 
+import css from "./Team.module.css";
+
 import Main from "@/components/Ui/Main";
 import { useHeaderContext } from "@/hooks/useHeaderContext"
 //import Image from "next/image";
@@ -46,7 +48,7 @@ export default function Team() {
     return (
         <>
             <Main className="art:w:full">
-                <ul className={art.container}>
+                <ul className={`${art.container} ${css.container}`}>
                     {
                         users.map((user, index) => (
                             <li key={index} className={art.box}>
