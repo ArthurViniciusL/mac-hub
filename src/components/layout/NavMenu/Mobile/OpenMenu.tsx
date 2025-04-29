@@ -13,7 +13,7 @@ export default function OpenMenu({ content, setPainelState }: NavMenuProps) {
         content_ul:"art:flex art:col art:gap:base",
         btn_close:"art:bg:none art:font:black-01"
     }
-
+    /* "backdropFilter":"blur(10px)" */
     return (
         <>
             <main className={art.container} style={{"zIndex":"200"}}>

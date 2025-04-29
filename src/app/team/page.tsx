@@ -19,6 +19,7 @@ export default function Team() {
     }, []);
 
     const users = TeamProfiles;
+    const sortUsers = users.sort((previous, next) => previous.name.localeCompare(next.name));
 
     function treatName(name: string) {
         if (!name) return "";
@@ -50,7 +51,7 @@ export default function Team() {
             <Main className="art:w:full">
                 <ul className={`${art.container} ${css.container}`}>
                     {
-                        users.map((user, index) => (
+                        sortUsers.map((user, index) => (
                             <li key={index} className={art.box}>
                                 {/* 8rem */}
                                 <div className={art.card} style={{ "height": "fit", "minHeight": "8rem" }}>
