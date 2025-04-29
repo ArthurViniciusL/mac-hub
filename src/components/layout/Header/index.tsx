@@ -12,7 +12,7 @@ export default function Header() {
 
     const art = {
         header: "art:w:full art:flex art:gap:base art:col art:justify-content:center art:align-items:center",
-        h1: "art:w:full art:max-w:30 art:border:solid art:border:white-03 art:border:thin art:border-rd:base art:p:sm art:flex art:align-items:center art:justify-content:center art:font:black-02 art:font:base art:font:semibold"
+        h1: "art:select:none art:w:full art:max-w:30 art:border:solid art:border:white-03 art:border:thin art:border-rd:base art:p:sm art:flex art:align-items:center art:justify-content:center art:font:black-02 art:font:base art:font:semibold"
     }
 
     return (

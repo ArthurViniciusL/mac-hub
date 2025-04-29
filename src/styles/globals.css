@@ -97,3 +97,7 @@ li {
 .art\:inline-block {
   display: inline-block;
 }
+
+.art\:select\:none {
+  user-select: none;
+}

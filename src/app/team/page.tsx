@@ -49,6 +49,9 @@ export default function Team() {
     return (
         <>
             <Main className="art:w:full">
+
+                <input className="art:border:solid" type="text" placeholder="Pesquisar contato..."/>
+
                 <ul className={`${art.container} ${css.container}`}>
                     {
                         sortUsers.map((user, index) => (
