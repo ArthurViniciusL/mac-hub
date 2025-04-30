@@ -6,9 +6,9 @@ import ToolTip from "@/components/Ui/Tooltip";
 export default function CloseMenu({ content, setPainelState }: NavMenuProps) {
 
     const art = {
-        box: "art:w:full art:h:03 art:fixed art:m-b:2xl",
+        box: "art:w:full art:fixed art:m-b:2xl",
         nav: "art:full art:flex art:align-items:between art:justify-content:center art:p:sm",
-        content: "art:w:full art:max-w:30 art:p:base art:bg:white-01 art:border:solid art:border:white-03 art:border:thin art:border-rd:lg art:flex art:align-items:center art:justify-content:between",
+        content: "art:w:full art:p:base art:bg:white-01 art:border:solid art:border:white-03 art:border:thin art:border-rd:lg art:flex art:align-items:center art:justify-content:between",
         boxLinks: "art:bg:none art:hover:none",
         btn_open: "art:bg:none art:font:black-01"
     }
@@ -17,7 +17,7 @@ export default function CloseMenu({ content, setPainelState }: NavMenuProps) {
         <>
             <footer className={art.box} style={{ "bottom": "0", "left": "0", "zIndex": "200" }}>
                 <nav className={art.nav}>
-                    <ul className={art.content}>
+                    <ul className={art.content} style={{"maxWidth":"30rem"}}>
                         {
                             content.slice(0, 4).map((menu, index) => (
                                 <li key={index}>

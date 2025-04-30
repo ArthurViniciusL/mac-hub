@@ -5,21 +5,31 @@ import css from "./Team.module.css";
 import Main from "@/components/Ui/Main";
 import { useHeaderContext } from "@/hooks/useHeaderContext"
 //import Image from "next/image";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import BtnTalkTo from "./components/BtnTalkTo";
 import { TeamProfiles } from "@/utils/Objects/TeamProfiles";
 import ToolTip from "@/components/Ui/Tooltip";
+import SearchBar from "@/components/Ui/SearchBar";
 
 export default function Team() {
 
     const { setTitle } = useHeaderContext();
+    const [users, setUsers] = useState(TeamProfiles);
 
     useEffect(() => {
         setTitle("Equipe");
+        setUsers(users.sort((previous, next) => previous.name.localeCompare(next.name)));
     }, []);
 
-    const users = TeamProfiles;
-    const sortUsers = users.sort((previous, next) => previous.name.localeCompare(next.name));
+    //event: ChangeEvent<HTMLInputElement>
+    function handleSearch(search: string) {
+        const query = search.toLowerCase();
+        const filter = TeamProfiles.filter(
+            (user) =>
+                user.name.toLowerCase().includes(query) || user.email.toLowerCase().includes(query)
+        );
+        setUsers(filter);
+    }
 
     function treatName(name: string) {
         if (!name) return "";
@@ -37,7 +47,7 @@ export default function Team() {
     const art = {
         container: "art:w:full art:flex art:col art:wrap art:gap:base art:justify-content:center art:align-items:start",
         box: "art:w:full art:flex art:justify-content:center",
-        card: "art:w:full art:relative art:max-w:30 art:overflow:hidden art:flex art:gap:sm art:row art:wrap art:align-items:start art:justify-content:between art:p:base art:border:solid art:border:thin art:border:white-03 art:hover:border:white-04 art:border-rd:lg art:hover:border-rd:base art:ease:quick",
+        card: "art:w:full art:relative art:overflow:hidden art:flex art:gap:sm art:row art:wrap art:align-items:start art:justify-content:between art:p:base art:border:solid art:border:thin art:border:white-03 art:hover:border:white-04 art:border-rd:lg art:hover:border-rd:base art:ease:quick",
 
         box_user: "art:flex art:row art:wrap  art:gap:base",
 
@@ -48,16 +58,15 @@ export default function Team() {
 
     return (
         <>
-            <Main className="art:w:full">
+            <Main className="art:w:full art:flex art:gap:base art:col art:align-items:center">
 
-                <input className="art:border:solid" type="text" placeholder="Pesquisar contato..."/>
+                <SearchBar onSearch={handleSearch} placeholder="Pesquisar por contato..." />
 
                 <ul className={`${art.container} ${css.container}`}>
                     {
-                        sortUsers.map((user, index) => (
+                        users.map((user, index) => (
                             <li key={index} className={art.box}>
-                                {/* 8rem */}
-                                <div className={art.card} style={{ "height": "fit", "minHeight": "8rem" }}>
+                                <div className={art.card} style={{"maxWidth":"30rem" , "height":"min(fit-content,8rem)"}}>
                                     <div className={art.box_user}>
                                         <div className={`${art.user_picture} art:bg:${user.color_theme}-02 art:border:${user.color_theme}:50%`} style={{ "width": "3rem", "height": "3rem" }}>
                                             {user.name[0].toUpperCase()}

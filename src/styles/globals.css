@@ -28,9 +28,6 @@ li {
   list-style: none;
 }
 
-@media (prefers-color-scheme: dark) {}
-
-
 .art\:log\:red {
   border: solid red 0.5px;
 }
@@ -42,6 +39,7 @@ li {
 .art\:w\:max-content {
   width: max-content;
 }
+
 .art\w\:min-content\: {
   width: min-content;
 }
@@ -101,3 +99,22 @@ li {
 .art\:select\:none {
   user-select: none;
 }
+
+.art\:outline\:none {
+  outline: none;
+}
+
+.art\:p-y\:base {
+  padding-top: var(--base);
+  padding-bottom: var(--base);
+}
+
+.art\:p-x\:base {
+  padding-left: var(--base);
+  padding-right: var(--base);
+}
+
+.art\:p-x\:lg {
+  padding-left: var(--lg);
+  padding-right: var(--lg);
+} 
