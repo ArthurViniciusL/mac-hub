@@ -1,10 +1,6 @@
 @import url('art-css/art.css');
 @import url('animation.css');
 
-/* * {
-  scrollbar-width: none;
-} */
-
 html {
   scrollbar-width: none;
   display: flex;
