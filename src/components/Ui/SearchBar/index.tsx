@@ -20,7 +20,7 @@ export default function SearchBar({ onSearch, placeholder }: SearchBarProps) {
     }
     
     const art = {
-        content: `art:bg:none art:font:black-01 art:ease:quick art:outline:none art:border-b:solid art:border:${isActive ? "white-04" : "white-03"} art:border:thin art:m:base art:p-y:base art:p-x:lg`
+        content: `art:bg:none art:font:black-01 art:ease:quick art:border-b:solid art:border:${isActive ? "white-04" : "white-03"} art:border:thin art:m:base art:p-y:base art:p-x:lg`
     }
 
     return (

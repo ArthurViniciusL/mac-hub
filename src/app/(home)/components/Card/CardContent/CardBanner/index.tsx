@@ -11,14 +11,14 @@ interface BannerProps {
 export default function Banner({ src, about, alt }: BannerProps) {
 
     const art = {
-        container: "art:w:full art:h:50% art:ease:slow art:flex art:align-items:start art:justify-content:center art:overflow:hidden cursor:default",
+        container: "art:w:full art:ease:slow art:flex art:align-items:start art:justify-content:center art:overflow:hidden cursor:default",
         imgNoFount: "art:w:full art:h:full art:bg:white-02 art:flex art:justify-content:center art:align-items:center",
         banner: "art:w:fit"
     }
 
     return (
         <>
-            <div className={art.container}>
+            <div className={art.container} style={{"height":"50%"}}>
                 <ToolTip msg={`Quadro: ${about}`}>
                     {
                         !src ?
