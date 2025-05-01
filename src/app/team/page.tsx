@@ -21,7 +21,6 @@ export default function Team() {
         setUsers(users.sort((previous, next) => previous.name.localeCompare(next.name)));
     }, []);
 
-    //event: ChangeEvent<HTMLInputElement>
     function handleSearch(search: string) {
         const query = search.toLowerCase();
         const filter = TeamProfiles.filter(
@@ -98,7 +97,6 @@ export default function Team() {
                                                             )
                                                     }
                                                 </h4>
-
                                             </div>
                                             <ToolTip msg={user.email}>
                                                 <a href={`mailto:${user.email}`} className={`art:ease:quick art:font:black-04 art:flex art:hover:font:${user.color_theme}-01`}>
