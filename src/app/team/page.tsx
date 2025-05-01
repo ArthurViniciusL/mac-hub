@@ -31,6 +31,10 @@ export default function Team() {
         setUsers(filter);
     }
 
+    function handleClearSearch() {
+        setUsers(TeamProfiles);
+    }
+
     function treatName(name: string) {
         if (!name) return "";
 
@@ -60,7 +64,7 @@ export default function Team() {
         <>
             <Main className="art:w:full art:flex art:gap:base art:col art:align-items:center">
 
-                <SearchBar onSearch={handleSearch} placeholder="Pesquisar por contato..." />
+                <SearchBar onSearch={handleSearch} clearSearch={handleClearSearch} placeholder="Pesquisar por contato..." />
 
                 <ul className={`${art.container} ${css.container}`}>
                     {

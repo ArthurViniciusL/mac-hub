@@ -24,7 +24,9 @@ export {
     BookImage as IconMacGallery,
     TentTree as IconEducational,
     Flower2 as IconTeam,
-    MessagesSquare as IconTalkTo
+    MessagesSquare as IconTalkTo,
+    Trash2 as IconClear,
+    CircleX as IconClose
 
 } from // itens as newName
     'lucide-react';

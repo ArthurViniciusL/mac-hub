@@ -27,3 +27,24 @@ li {
 .art\:log\:red {
   border: solid red 0.5px;
 }
+
+
+.art\:fill\:white-02 {
+  /* art:fill:red-02 */
+   fill: var(--red-02);
+}
+
+.art\:hover\:fill\:white-02:hover {
+  /* art:hover:fill:red-02 */
+   fill: var(--white-02);
+}
+
+.art\:fill\:red-02 {
+  /* art:fill:red-02 */
+   fill: var(--red-02);
+}
+
+.art\:hover\:fill\:red-02:hover {
+  /* art:hover:fill:red-02 */
+   fill: var(--red-02);
+}

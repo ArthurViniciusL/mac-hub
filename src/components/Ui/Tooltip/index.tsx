@@ -30,7 +30,7 @@ export default function ToolTip({ children, msg }: ToolTipProps) {
 
     function handleMouseMove(e: React.MouseEvent) {
         setMouseCoords({ x: e.clientX, y: e.clientY });
-        setTimeout(() => setIsOpen(false), 1500);
+        setTimeout(() => setIsOpen(false), 2000);
     }
 
     const art = {

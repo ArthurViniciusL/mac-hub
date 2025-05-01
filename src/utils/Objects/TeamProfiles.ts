@@ -54,5 +54,12 @@ export const TeamProfiles = [
         "position": "Auxiliar de T.I",
         "email": "Henrique.silva@museumaccg.org.br",
         "color_theme": "red"
+    },
+    {
+        "id": 8,
+        "name": "Emilly Gabrielly Correia Santos",
+        "position": "estagiário",
+        "email": "Emilly.Santos@museumaccg.org.br",
+        "color_theme": "green"
     }
 ]

@@ -17,9 +17,9 @@ export default function RootLayout({
     return (
         <AppProvider>
             <html lang="pt-br" className="art:w:device art:h:device art:bg:white-01 art:font:black-01">
-                <body className="art:w:full art:flex gap:base art:overflow:hidden">
+                <body className="art:w:full art:flex art:overflow:hidden">
                     <NavMenu />
-                    <div className="art:w:full art:flex art:col art:gap:lg art:align-items:center art:overflow:auto art:p:base">
+                    <div className="art:w:full art:flex art:col art:gap:xl art:align-items:center art:overflow:auto art:p:base">
                         <Header />
                         {children}
                     </div>
