@@ -10,6 +10,7 @@ import BtnTalkTo from "./components/BtnTalkTo";
 import { TeamProfiles } from "@/utils/Objects/TeamProfiles";
 import ToolTip from "@/components/Ui/Tooltip";
 import SearchBar from "@/components/Ui/SearchBar";
+import UserNotFound from "./components/UserNotFound";
 
 export default function Team() {
 
@@ -54,7 +55,7 @@ export default function Team() {
 
         box_user: "art:flex art:row art:wrap  art:gap:base",
 
-        user_picture: "art:pointer:none art:flex art:justify-content:center art:align-items:center art:p:base art:font:white-02 art:font:semibold art:font:base art:border-rd:base art:border:thin art:border:solid",
+        user_picture: "art:pointer:none art:flex art:justify-content:center art:align-items:center art:p:base art:no-dark:font:white-02 art:font:semibold art:font:base art:border-rd:base art:border:thin art:border:solid",
 
         content_user: "art:overflow:hidden art:flex art:wrap  art:col art:gap:sm"
     }
@@ -62,62 +63,83 @@ export default function Team() {
     return (
         <>
             <Main className="art:w:full art:flex art:gap:base art:col art:align-items:center">
-
                 <SearchBar onSearch={handleSearch} clearSearch={handleClearSearch} placeholder="Pesquisar por contato..." />
-
-                <ul className={`${art.container} ${css.container}`}>
-                    {
-                        users.map((user, index) => (
-                            <li key={index} className={art.box}>
-                                <div className={art.card} style={{"maxWidth":"30rem" , "height":"min(fit-content,8rem)"}}>
-                                    <div className={art.box_user}>
-                                        <div className={`${art.user_picture} art:bg:${user.color_theme}-02 art:border:${user.color_theme}:50%`} style={{ "width": "3rem", "height": "3rem" }}>
-                                            {user.name[0].toUpperCase()}
-                                        </div>
-                                        {/* style={{ "width": "25rem" }} */}
-                                        <div className={art.content_user}>
-                                            <div className="art:flex art:col art:gap:sm art:wrap">
-                                                <h3 className="art:font:semibold art:font:base art:font:capitalize">
-                                                    {
-                                                        treatName(user.name).length > 14 ?
-                                                            (
-                                                                treatName(user.name).slice(0, 13) + "..."
-                                                            ) : (
-                                                                treatName(user.name)
-                                                            )
-                                                    }
-                                                </h3>
-                                                <h4 className="art:font:black-04 art:font:capitalize art:font:medium" style={{ "fontSize": "0.9rem" }}>
-                                                    {
-                                                        user.position.length > 17 ?
-                                                            (
-                                                                user.position.slice(0, 17) + "..."
-                                                            ) : (
-                                                                user.position
-                                                            )
-                                                    }
-                                                </h4>
+                {
+                    users.length > 0 ?
+                        (
+                            <ul className={`${art.container} ${css.container}`}>
+                                {
+                                    users.map((user, index) => (
+                                        <li key={index} className={art.box}>
+                                            <div className={art.card} style={{ "maxWidth": "30rem", "height": "min(fit-content,8rem)" }}>
+                                                <div className={art.box_user}>
+                                                    <div className={`
+                                                            ${art.user_picture} 
+                                                            ${user.color_theme === "black" ?
+                                                            `art:no-dark:bg:${user.color_theme}-02`
+                                                            :
+                                                            `art:bg:${user.color_theme}-02
+                                                            `}
+                                                            art:border:${user.color_theme}:50%
+                                                        `}
+                                                        style={{ "width": "3rem", "height": "3rem" }}>
+                                                        {user.name[0].toUpperCase()}
+                                                    </div>
+                                                    {/* style={{ "width": "25rem" }} */}
+                                                    <div className={art.content_user}>
+                                                        <div className="art:flex art:col art:gap:sm art:wrap">
+                                                            <h3 className="art:font:semibold art:font:base art:font:capitalize">
+                                                                {
+                                                                    treatName(user.name).length > 14 ?
+                                                                        (
+                                                                            treatName(user.name).slice(0, 13) + "..."
+                                                                        ) : (
+                                                                            treatName(user.name)
+                                                                        )
+                                                                }
+                                                            </h3>
+                                                            <h4 className="art:font:black-04 art:font:capitalize art:font:medium" style={{ "fontSize": "0.9rem" }}>
+                                                                {
+                                                                    user.position.length > 17 ?
+                                                                        (
+                                                                            user.position.slice(0, 17) + "..."
+                                                                        ) : (
+                                                                            user.position
+                                                                        )
+                                                                }
+                                                            </h4>
+                                                        </div>
+                                                        <ToolTip msg={user.email}>
+                                                            <a href={`mailto:${user.email}`} className={`art:ease:quick art:font:black-04 art:flex art:hover:font:${user.color_theme}-01`}>
+                                                                {
+                                                                    user.email.length > 31 ?
+                                                                        (
+                                                                            user.email.slice(0, 31).toLocaleLowerCase() + "..."
+                                                                        ) : (
+                                                                            user.email.toLocaleLowerCase()
+                                                                        )
+                                                                }
+                                                            </a>
+                                                        </ToolTip>
+                                                    </div>
+                                                </div>
+                                                <BtnTalkTo href={user.email} label={treatName(user.name)} bgColor={user.color_theme} />
                                             </div>
-                                            <ToolTip msg={user.email}>
-                                                <a href={`mailto:${user.email}`} className={`art:ease:quick art:font:black-04 art:flex art:hover:font:${user.color_theme}-01`}>
-                                                    {
-                                                        user.email.length > 31 ?
-                                                            (
-                                                                user.email.slice(0, 31).toLocaleLowerCase() + "..."
-                                                            ) : (
-                                                                user.email.toLocaleLowerCase()
-                                                            )
-                                                    }
-                                                </a>
-                                            </ToolTip>
-                                        </div>
-                                    </div>
-                                    <BtnTalkTo href={user.email} label={treatName(user.name)} bgColor={user.color_theme} />
-                                </div>
-                            </li>
-                        ))
-                    }
-                </ul>
+                                        </li>
+                                    ))
+                                }
+                            </ul>
+                        )
+                        :
+                        (
+                            <div className="art:w:full art:flex art:col art:gap:2xl art:justify-content:center art:align-items:center" style={{ "minHeight": "50dvh" }}>
+                                <UserNotFound />
+                                <p className="art:font:black-04">
+                                    Nenhum contato encontrado!
+                                </p>
+                            </div>
+                        )
+                }
             </Main >
         </>
     )
