@@ -6,8 +6,8 @@ import ToolTip from "@/components/Ui/Tooltip";
 export default function CloseMenu({ content, setPainelState }: NavMenuProps) {
 
     const art = {
-        box: "art:w:full art:fixed art:m-b:2xl",
-        nav: "art:full art:flex art:align-items:between art:justify-content:center art:p:sm",
+        box: "art:w:full art:fixed",
+        nav: "art:w:full art:flex art:align-items:between art:justify-content:center art:p:sm",
         content: "art:w:full art:p:base art:bg:white-01 art:border:solid art:border:white-03 art:border:thin art:border-rd:lg art:flex art:align-items:center art:justify-content:between",
         boxLinks: "art:bg:none art:hover:none",
         btn_open: "art:bg:none art:font:black-01"

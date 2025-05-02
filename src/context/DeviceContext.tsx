@@ -10,7 +10,7 @@ interface DeviceProviderProps {
 
 export function DeviceProvider({ children }: DeviceProviderProps) {
 
-    const [isMobile, setIsMobile] = useState<boolean>(false);
+    const [isMobile, setIsMobile] = useState<boolean>(true);
 
     useEffect(() => {
 
