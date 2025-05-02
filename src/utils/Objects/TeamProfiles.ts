@@ -61,5 +61,12 @@ export const TeamProfiles = [
         "position": "estagiário",
         "email": "Emilly.Santos@museumaccg.org.br",
         "color_theme": "green"
+    },
+    {
+        "id": 9,
+        "name": "Danilo Santos",
+        "position": "comercial",
+        "email": "danilo.santos@museumaccg.org.br",
+        "color_theme": "yellow"
     }
 ]

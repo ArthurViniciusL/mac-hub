@@ -1,9 +1,14 @@
 @import url('art-css/art.css');
 @import url('animation.css');
 
+* {
+  scrollbar-color: var(--white-04) var(--white-01);
+}
+
 html {
   scrollbar-width: none;
   display: flex;
+  
   /* opacity: 0; */
   /* animation: fadeInOut 2s ease-in-out forwards; */
 }
