@@ -5,7 +5,7 @@ import img from "@/assets/images/search_not_found.svg";
 export default function UserNotFound() {
     return (
         <>
-        <Image src={img} alt="usuário não encontrado" width={300}/>
+        <Image className="" src={img} alt="usuário não encontrado" width={300}/>
         </>
     );
 }

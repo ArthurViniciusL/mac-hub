@@ -3,6 +3,7 @@
 
 * {
   scrollbar-color: var(--white-04) var(--white-01);
+  -webkit-tap-highlight-color: transparent;
 }
 
 html {
@@ -29,14 +30,23 @@ li {
   list-style: none;
 }
 
+.art\:active\:font\:red-02:active {
+  /* art:active:font:red-02 */
+  color: var(--red-02);
+}
+
+.art\:active\:bg\:red\:10\%:active {
+  /* art:active:bg:red:10%: */
+  background: rgba(var(--red-rgb), 0.1);
+}
+
 .art\:log\:red {
   border: solid red 0.5px;
 }
 
-
 .art\:fill\:white-02 {
   /* art:fill:red-02 */
-   fill: var(--red-02);
+   fill: var(--white-02);
 }
 
 .art\:hover\:fill\:white-02:hover {

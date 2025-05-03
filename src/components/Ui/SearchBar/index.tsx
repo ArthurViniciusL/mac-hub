@@ -38,7 +38,7 @@ export default function SearchBar({ onSearch, clearSearch, placeholder }: Search
     const art = {
         container: `art:w:full art:cursor:pointer art:ease:quick art:flex art:row art:justify-content:between art:border-b:solid art:border:${searchActive ? "black-01" : "white-03"} art:border:thin art:m-b:base art:p-x:base`,
         input: `art:w:full art:h:full art:p-y:base art:bg:none art:font:${searchActive ? "black-01" : "white-04"}`,
-        btn: "art:flex art:ease:quick art:bg:none art:hover:bg:red:10% art:font:white-04 art:hover:font:red-02 art:border-rd:base art:p:sm",
+        btn: "art:flex art:ease:quick art:bg:none art:hover:bg:red:10% art:active:bg:red:10% art:font:white-04 art:hover:font:red-02 art:active:font:red-02 art:border-rd:base art:p:sm",
     }
 
     return (
